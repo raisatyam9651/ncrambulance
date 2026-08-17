@@ -45,6 +45,7 @@
           <li><a href="/#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Services</a></li>
           <li><a href="/#types" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ambulance Types</a></li>
           <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Areas We Serve</a></li>
+          <li><a href="/blog/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Blog</a></li>
           <li><a href="/#faqs" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">FAQs</a></li>
           <li><a href="/#contact" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Contact</a></li>
         </ul>

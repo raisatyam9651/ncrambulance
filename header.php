@@ -48,7 +48,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
     <nav data-nav-desktop style="margin-left:auto;display:flex;align-items:center;gap:clamp(12px,1.6vw,26px)">
       <a href="/#top" style="font-size:15px;font-weight:600;color:var(--ink);text-decoration:none">Home</a>
       <a href="/#about" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">About Us</a>
-      <a href="/#blog" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Blog</a>
+      <a href="/blog/" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Blog</a>
       <a href="/#contact" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Contact</a>
     </nav>
 
@@ -71,7 +71,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
     <div style="border-top:1px solid var(--line);background:var(--card);padding:16px clamp(16px,4vw,64px) 24px;display:grid;gap:4px">
       <a href="/#top" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Home</a>
       <a href="/#about" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">About Us</a>
-      <a href="/#blog" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Blog</a>
+      <a href="/blog/" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Blog</a>
       <a href="/#contact" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none">Contact</a>
     </div>
   </sc-if>
