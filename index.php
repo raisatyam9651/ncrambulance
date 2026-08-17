@@ -1,87 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<link rel="stylesheet" href="_ds/ethical-healthcare-community-design-syst-6ce9bd81-787b-44c9-bdfb-94df1770d8a1/colors_and_type.css">
-<script src="_ds/ethical-healthcare-community-design-syst-6ce9bd81-787b-44c9-bdfb-94df1770d8a1/_ds_bundle.js"></script>
-<script src="./image-slot.js"></script>
-<style>
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--canvas); }
-section[id], div[id] { scroll-margin-top: 96px; }
-img, svg { display: block; }
-input, select, textarea, button { font-family: var(--font-sans); }
-[data-show-mobile] { display: none; }
-@media (max-width: 1080px) { [data-nav-desktop] { display: none !important; } [data-nav-toggle] { display: inline-flex !important; } }
-@media (max-width: 860px) { [data-show-mobile] { display: flex; } [data-hide-mobile] { display: none !important; } }
-[data-seg] input { position: absolute; opacity: 0; pointer-events: none; }
-[data-seg] input:checked + span { background: #fff; color: var(--ink); box-shadow: 0 2px 6px rgba(26,17,71,.10); }
-[data-faq] summary::-webkit-details-marker { display: none; }
-[data-faq] summary::marker { content: ''; }
-[data-faq][open] summary [data-chev] { transform: rotate(180deg); }
-@keyframes livepulse { 0%,100% { box-shadow: 0 0 0 0 rgba(16,185,129,.55); } 70% { box-shadow: 0 0 0 8px rgba(16,185,129,0); } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; } }
-</style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MedicalBusiness","name":"[BRAND NAME PLACEHOLDER]","description":"24/7 ambulance service across Delhi NCR — emergency, ICU, ALS, BLS, cardiac, ventilator and neonatal ambulances.","telephone":"+91 7317564794","areaServed":["Delhi","Gurugram","Noida","Ghaziabad","Faridabad","Greater Noida"],"address":{"@type":"PostalAddress","streetAddress":"[ADDRESS PLACEHOLDER]","addressLocality":"New Delhi","addressRegion":"Delhi NCR","postalCode":"[PIN]","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}
-</script>
-</helmet>
-
-<header id="top" style="position:sticky;top:0;z-index:60;background:rgba(245,244,247,0.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line)">
-  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(16px,4vw,64px);height:76px;display:flex;align-items:center;gap:clamp(12px,2vw,32px)">
-    <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)">
-      <span style="width:42px;height:42px;border-radius:14px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);box-shadow:0 10px 24px -12px rgba(220,38,38,.7);display:grid;place-items:center;flex:none">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle><path d="M6 11h4M8 9v4"></path></svg>
-      </span>
-      <span style="display:flex;flex-direction:column;line-height:1.1">
-        <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">{{ brand }}</span>
-        <span style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted)">Ambulance Service · Delhi NCR</span>
-      </span>
-    </a>
-
-    <nav data-nav-desktop style="margin-left:auto;display:flex;align-items:center;gap:clamp(12px,1.6vw,26px)">
-      <a href="#top" style="font-size:15px;font-weight:600;color:var(--ink);text-decoration:none">Home</a>
-      <a href="#services" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Ambulance Services</a>
-      <a href="#types" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Ambulance Types</a>
-      <a href="#areas" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Areas We Serve</a>
-      <a href="#about" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">About Us</a>
-      <a href="#faqs" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">FAQs</a>
-      <a href="#contact" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Contact</a>
-    </nav>
-
-    <div style="margin-left:auto;display:flex;align-items:center;gap:12px">
-      <span data-hide-mobile style="display:flex;flex-direction:column;line-height:1.15;text-align:right">
-        <span style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted)">24/7 Helpline</span>
-        <span style="font-size:15px;font-weight:800;color:var(--ink)">{{ phone }}</span>
-      </span>
-      <a href="{{ telHref }}" style="display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 16px 34px -18px rgba(220,38,38,.85);white-space:nowrap" style-hover="transform:translateY(-1px);box-shadow:0 20px 40px -18px rgba(220,38,38,.95)">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg>
-        Call Emergency
-      </a>
-      <button data-nav-toggle type="button" onClick="{{ toggleMenu }}" aria-label="Open menu" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;flex:none">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
-      </button>
-    </div>
-  </div>
-
-  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-    <div style="border-top:1px solid var(--line);background:var(--card);padding:16px clamp(16px,4vw,64px) 24px;display:grid;gap:4px">
-      <a href="#services" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Ambulance Services</a>
-      <a href="#types" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Ambulance Types</a>
-      <a href="#areas" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Areas We Serve</a>
-      <a href="#about" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">About Us</a>
-      <a href="#faqs" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">FAQs</a>
-      <a href="#contact" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none">Contact</a>
-    </div>
-  </sc-if>
-</header>
-
+<?php include 'header.php'; ?>
 <main style="background:var(--canvas);overflow-x:hidden">
 
   <section style="position:relative;padding:clamp(40px,6vw,72px) 0 clamp(90px,10vw,130px)">
@@ -99,7 +16,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
         </span>
 
         <h1 style="margin:20px 0 0;font-weight:900;font-size:clamp(40px,5.6vw,72px);letter-spacing:-0.04em;line-height:0.98;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">
-          24/7 Ambulance Service in <span style="position:relative;display:inline-block">Delhi NCR<img src="assets/scribble-underline.svg" alt="" aria-hidden="true" style="position:absolute;left:0;bottom:-0.16em;width:100%;height:auto;pointer-events:none"></span>
+          24/7 Ambulance Service in <span style="position:relative;display:inline-block">Delhi NCR<img src="/assets/scribble-underline.svg" alt="" aria-hidden="true" style="position:absolute;left:0;bottom:-0.16em;width:100%;height:auto;pointer-events:none"></span>
         </h1>
 
         <p style="margin:26px 0 0;font-weight:600;font-size:clamp(17px,1.7vw,21px);line-height:1.45;color:var(--ink);text-wrap:pretty;max-width:34ch">
@@ -118,7 +35,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.8 8.6c.3-.7 1.4-.6 1.7 0l.5 1.1-.7.9c.5 1 1.2 1.7 2.2 2.2l.9-.7 1.1.5c.6.3.7 1.4 0 1.7-1.4.6-3.4-.3-4.6-1.5S8.2 10 8.8 8.6Z"></path></svg>
             WhatsApp Us
           </a>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;padding:12px 6px;font-weight:700;font-size:15px;color:var(--purple-600);text-decoration:none;border-bottom:1px solid rgba(124,58,237,.3)" style-hover="color:var(--purple-700)">
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;padding:12px 6px;font-weight:700;font-size:15px;color:var(--purple-600);text-decoration:none;border-bottom:1px solid rgba(124,58,237,.3)" style-hover="color:var(--purple-700)">
             Book an Ambulance
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg>
           </a>
@@ -135,7 +52,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
 
       <div style="position:relative">
         <div style="position:relative;width:100%;aspect-ratio:4/3.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--card)">
-          <img id="hero-ambulance" src="assets/hero_ambulance.jpg" alt="Ambulance Service in Delhi NCR" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img id="hero-ambulance" src="/assets/hero_ambulance.jpg" alt="Ambulance Service in Delhi NCR" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <span style="position:absolute;top:20px;left:20px;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);font-size:13px;font-weight:700;color:#047857;box-shadow:var(--shadow-sm);pointer-events:none">
           <span style="width:8px;height:8px;border-radius:50%;background:#10B981;flex:none"></span>Dispatch desk online
@@ -277,19 +194,19 @@ input, select, textarea, button { font-family: var(--font-sans); }
           <span style="width:52px;height:52px;border-radius:18px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-4 8 4v13"></path><path d="M9 21v-5h6v5"></path><path d="M12 8v4M10 10h4"></path></svg></span>
           <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">Hospital Transfer</h3>
           <p style="margin:0;font-size:15px;line-height:1.6;color:var(--ink-soft);flex:1">Safe patient transportation between hospitals.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">Book Transfer</a>
+          <a href="/#book" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">Book Transfer</a>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:14px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:52px;height:52px;border-radius:18px;background:rgba(16,185,129,.12);color:#047857;display:grid;place-items:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V7"></path><path d="M3 12h11a5 5 0 0 1 5 5v1"></path><circle cx="8" cy="9" r="1.6"></circle></svg></span>
           <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">Patient Transportation</h3>
           <p style="margin:0;font-size:15px;line-height:1.6;color:var(--ink-soft);flex:1">Comfortable transportation for non-emergency patients.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">Book Ambulance</a>
+          <a href="/#book" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">Book Ambulance</a>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:14px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:52px;height:52px;border-radius:18px;background:var(--gold-100);color:#B45309;display:grid;place-items:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="3"></rect><path d="M6 11h2.5l1.5-3 2 6 1.5-3H18"></path><path d="M9 21h6M12 17v4"></path></svg></span>
           <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">ICU / Critical Care</h3>
           <p style="margin:0;font-size:15px;line-height:1.6;color:var(--ink-soft);flex:1">Advanced life-support ambulance for critical patients.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">Request ICU Ambulance</a>
+          <a href="/#book" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">Request ICU Ambulance</a>
         </div>
       </div>
     </div>
@@ -314,85 +231,85 @@ input, select, textarea, button { font-family: var(--font-sans); }
           <span style="width:46px;height:46px;border-radius:16px;background:rgba(220,38,38,.10);color:#DC2626;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle><path d="M6 11h4M8 9v4"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Emergency Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Rapid dispatch for accidents, cardiac events and sudden medical emergencies.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="3"></rect><path d="M6 11h2.5l1.5-3 2 6 1.5-3H18"></path><path d="M9 21h6M12 17v4"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">ICU Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">ICU-level equipment and a critical care team for unstable patients.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-6 4 12 2-6h6"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">ALS Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Advanced life support with cardiac monitoring and emergency medicines.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3Z"></path><path d="M12 9v6M9 12h6"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">BLS Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Basic life support with oxygen, stretcher and a trained attendant.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(220,38,38,.3)">
           <span style="width:46px;height:46px;border-radius:16px;background:rgba(220,38,38,.10);color:#DC2626;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 8.5a4.6 4.6 0 0 0-8.5-2.4 4.6 4.6 0 0 0-8.5 2.4c0 4.6 8.5 10 8.5 10s8.5-5.4 8.5-10Z"></path><path d="M3.6 12h3.2l1.4-2.6 2 4.6 1.3-2.4h3"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Cardiac Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Cardiac monitoring and defibrillator support throughout the transfer.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h9a3 3 0 1 0-3-3"></path><path d="M4 12h13a3 3 0 1 1-3 3"></path><path d="M4 16h6"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Ventilator Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Ventilator-equipped transport with trained medical staff on board.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:rgba(245,124,90,.14);color:#C2410C;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="4"></rect><path d="M8 7V5h8v2"></path><path d="M12 11v4M10 13h4"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Neonatal Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Incubator-equipped transport for newborns and infants.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V7"></path><path d="M3 12h11a5 5 0 0 1 5 5v1"></path><circle cx="8" cy="9" r="1.6"></circle></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Patient Transfer Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Comfortable, planned transport for stable and recovering patients.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:rgba(26,17,71,.06);color:var(--ink);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="11" rx="3"></rect><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"></path><path d="M12 11.5v4"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Mortuary Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Respectful freezer-box transport, handled with dignity and care.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12 3 20l4-8-4-8 18 8Z"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Airport Ambulance Transfer</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Coordinated pickup and drop for air-ambulance and flight connections.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--gold-100);color:#B45309;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-8-8 18-2-8-8-2Z"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Intercity Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Long-distance transfers beyond NCR with a medical escort on board.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-4 8 4v13"></path><path d="M9 21v-5h6v5"></path><path d="M12 8v4M10 10h4"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Hospital-to-Hospital Transfer</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Planned shifting between hospitals anywhere across Delhi NCR.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:rgba(26,17,71,.06);color:var(--ink);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="13" rx="3"></rect><path d="M5 10h14"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="m7 20 2-3M17 20l-2-3"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Railway Station Ambulance</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Platform pickup and drop coordinated with the patient's train timing.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"></circle><path d="M3 19a6 6 0 0 1 12 0"></path><path d="M16 6a3 3 0 0 1 0 6M17.5 19a6 6 0 0 0-2-4.4"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Medical Escort Services</h3>
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Trained medical staff accompanying the patient throughout the journey.</p>
-          <a href="#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
       </div>
     </div>
@@ -670,7 +587,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
           <li style="display:flex;gap:11px;align-items:center;font-size:15px;color:var(--ink-soft)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m5 13 4 4 10-10"></path></svg>Long-distance patient transportation</li>
         </ul>
         <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
-          <a href="#book" style="display:inline-flex;align-items:center;gap:9px;padding:15px 24px;border-radius:16px;background:linear-gradient(180deg,#8b5cf6 0%,#7C3AED 100%);color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:var(--shadow-glow-purple)" style-hover="transform:translateY(-1px);background:linear-gradient(180deg,#A78BFA 0%,#8b5cf6 100%)">Book a Transfer</a>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:9px;padding:15px 24px;border-radius:16px;background:linear-gradient(180deg,#8b5cf6 0%,#7C3AED 100%);color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:var(--shadow-glow-purple)" style-hover="transform:translateY(-1px);background:linear-gradient(180deg,#A78BFA 0%,#8b5cf6 100%)">Book a Transfer</a>
           <a href="{{ telHref }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 24px;border-radius:16px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">Discuss the case</a>
         </div>
       </div>
@@ -840,161 +757,4 @@ input, select, textarea, button { font-family: var(--font-sans); }
   </section>
 </main>
 
-<footer style="background:#1a1147;color:#fff;padding:clamp(52px,7vw,88px) 0 0">
-  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:clamp(28px,3vw,48px)">
-      <div style="min-width:200px">
-        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-          <span style="width:42px;height:42px;border-radius:14px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);display:grid;place-items:center;flex:none">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle><path d="M6 11h4M8 9v4"></path></svg>
-          </span>
-          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em;color:#fff">{{ brand }}</span>
-        </div>
-        <p style="margin:0 0 18px;font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.6);max-width:34ch">24/7 ambulance service across Delhi, Gurgaon, Noida, Ghaziabad and Faridabad — emergency response, hospital transfers and patient transportation.</p>
-        <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(16,185,129,.16);color:#6EE7B7;font-size:13px;font-weight:700"><span style="width:7px;height:7px;border-radius:50%;background:#10B981"></span>24/7 availability</span>
-      </div>
-
-      <div>
-        <h3 style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)">Ambulance Services</h3>
-        <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Emergency Ambulance</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">ICU Ambulance</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">ALS Ambulance</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">BLS Ambulance</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Cardiac Ambulance</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ventilator Ambulance</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Neonatal Ambulance</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Patient Transfer</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)">Service Areas</h3>
-        <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
-          <li><a href="#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Delhi</a></li>
-          <li><a href="#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Gurgaon</a></li>
-          <li><a href="#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Noida</a></li>
-          <li><a href="#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ghaziabad</a></li>
-          <li><a href="#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Faridabad</a></li>
-          <li><a href="#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Greater Noida</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)">Quick Links</h3>
-        <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
-          <li><a href="#about" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">About</a></li>
-          <li><a href="#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Services</a></li>
-          <li><a href="#types" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ambulance Types</a></li>
-          <li><a href="#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Areas We Serve</a></li>
-          <li><a href="#faqs" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">FAQs</a></li>
-          <li><a href="#contact" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)">Contact</h3>
-        <ul style="margin:0;padding:0;list-style:none;display:grid;gap:12px">
-          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg><a href="{{ telHref }}" style="font-size:14.5px;font-weight:700;color:#fff;text-decoration:none">{{ phone }}</a></li>
-          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5Z"></path></svg><a href="{{ waHref }}" target="_blank" rel="noopener" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none">WhatsApp us</a></li>
-          <li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:rgba(255,255,255,.8)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="m4 7 8 6 8-6"></path></svg>[EMAIL PLACEHOLDER]</li>
-          <li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:rgba(255,255,255,.8)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>[ADDRESS PLACEHOLDER], New Delhi</li>
-        </ul>
-      </div>
-    </div>
-
-    <div style="margin-top:clamp(36px,4vw,56px);padding:22px 0;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
-      <p style="margin:0;font-size:13px;color:rgba(255,255,255,.5)">© <span>2026</span> {{ brand }}. All rights reserved. <span style="color:rgba(255,255,255,.35)">[Replace placeholders before publishing]</span></p>
-      <div style="display:flex;flex-wrap:wrap;gap:20px">
-        <a href="privacy-policy.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Privacy Policy</a>
-        <a href="#contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Terms &amp; Conditions</a>
-        <a href="#contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Disclaimer</a>
-      </div>
-    </div>
-    <p style="margin:0;padding-bottom:26px;font-size:12px;line-height:1.6;color:rgba(255,255,255,.38);max-width:90ch">This page describes ambulance transportation services only. It does not provide medical advice or diagnosis. In a life-threatening emergency, contact your nearest hospital emergency department.</p>
-  </div>
-  <div data-show-mobile style="height:78px"></div>
-</footer>
-
-<sc-if value="{{ showFloatingCta }}" hint-placeholder-val="{{ true }}">
-  <a data-hide-mobile href="{{ telHref }}" style="position:fixed;right:24px;bottom:24px;z-index:70;display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 20px 46px -16px rgba(220,38,38,.95)" style-hover="transform:translateY(-2px)">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle><path d="M6 11h4M8 9v4"></path></svg>
-    Call Ambulance
-  </a>
-</sc-if>
-
-<div data-show-mobile style="position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:8px">
-  <a href="{{ telHref }}" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:800;font-size:13px;text-decoration:none">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg>
-    Call
-  </a>
-  <a href="{{ waHref }}" target="_blank" rel="noopener" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;font-weight:800;font-size:13px;text-decoration:none">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5Z"></path></svg>
-    WhatsApp
-  </a>
-  <a href="#book" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;border-radius:16px;background:var(--canvas);border:1px solid var(--line);color:var(--ink);font-weight:800;font-size:13px;text-decoration:none">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle></svg>
-    Book
-  </a>
-</div>
-
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;brandName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[Brand Name]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 7317564794&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 7317564794&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;showFloatingCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;},&quot;showTestimonials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;}}">
-class Component extends DCLogic {
-  state = { menuOpen: false, sent: false };
-
-  componentDidMount() {
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce || !('IntersectionObserver' in window)) return;
-    this._io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (!e.isIntersecting) return;
-        e.target.style.transition = 'opacity 520ms cubic-bezier(0.22,1,0.36,1), transform 520ms cubic-bezier(0.22,1,0.36,1)';
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'none';
-        this._io.unobserve(e.target);
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-    this._sweep();
-  }
-
-  componentDidUpdate() { this._sweep(); }
-
-  _sweep() {
-    if (!this._io) return;
-    document.querySelectorAll('[data-reveal]:not([data-revealed])').forEach((el) => {
-      el.setAttribute('data-revealed', '1');
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(10px)';
-      this._io.observe(el);
-    });
-  }
-
-  componentWillUnmount() { if (this._io) this._io.disconnect(); }
-
-  renderVals() {
-    const brand = this.props.brandName ?? '[Brand Name]';
-    const phone = this.props.phone ?? '+91 7317564794';
-    const wa = this.props.whatsappNumber ?? '+91 7317564794';
-    const digits = (s) => String(s).replace(/[^0-9+]/g, '');
-    const waDigits = String(wa).replace(/[^0-9]/g, '');
-    return {
-      brand,
-      phone,
-      telHref: 'tel:' + digits(phone),
-      waHref: waDigits ? 'https://wa.me/' + waDigits : 'https://wa.me/',
-      menuOpen: this.state.menuOpen,
-      sent: this.state.sent,
-      notSent: !this.state.sent,
-      showFloatingCta: this.props.showFloatingCta ?? true,
-      showTestimonials: this.props.showTestimonials ?? true,
-      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
-      closeMenu: () => this.setState({ menuOpen: false }),
-      submitBooking: (e) => { e.preventDefault(); this.setState({ sent: true }); },
-      resetBooking: () => this.setState({ sent: false })
-    };
-  }
-}
-</script>
-</body>
-</html>
+<?php include 'footer.php'; ?>

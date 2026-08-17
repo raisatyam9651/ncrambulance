@@ -1,53 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy & Disclaimer - Ambulance Service</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      background: #f9f9fb;
-    }
-    h1 {
-      color: #1a1147;
-      margin-bottom: 30px;
-    }
-    h2 {
-      color: #1a1147;
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    .highlight-box {
-      background: #fee2e2;
-      border-left: 4px solid #ef4444;
-      padding: 15px 20px;
-      margin: 20px 0;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-    a.back-btn {
-      display: inline-block;
-      margin-top: 40px;
-      color: #7c3aed;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a.back-btn:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <a href="index.html" class="back-btn">&larr; Back to Home</a>
+<?php include 'header.php'; ?>
+<main style='background:var(--canvas);padding:clamp(120px,10vw,160px) clamp(20px,5vw,64px);max-width:800px;margin:0 auto'>
+  <a href="/" class="back-btn">&larr; Back to Home</a>
   
   <h1>Privacy Policy & Disclaimer</h1>
 
@@ -83,6 +36,6 @@
   <h2>7. Contact Us</h2>
   <p>If you have any questions or concerns about this Privacy Policy, please contact us via the contact methods listed on our homepage.</p>
 
-  <a href="index.html" class="back-btn">&larr; Back to Home</a>
-</body>
-</html>
+  <a href="/" class="back-btn">&larr; Back to Home</a>
+</main>
+<?php include 'footer.php'; ?>
