@@ -12,6 +12,7 @@
 <script src="/_ds/ethical-healthcare-community-design-syst-6ce9bd81-787b-44c9-bdfb-94df1770d8a1/_ds_bundle.js"></script>
 <script src="/image-slot.js"></script>
 <style>
+@media (max-width: 860px) { .hide-on-mobile { display: none !important; } }
 html { scroll-behavior: smooth; overflow-x: hidden; }
 body { margin: 0; background: var(--canvas); overflow-x: hidden; }
 section[id], div[id] { scroll-margin-top: 96px; }
@@ -19,7 +20,7 @@ img, svg { display: block; }
 input, select, textarea, button { font-family: var(--font-sans); }
 [data-show-mobile] { display: none; }
 @media (max-width: 1080px) { [data-nav-desktop] { display: none !important; } [data-nav-toggle] { display: inline-flex !important; } }
-@media (max-width: 860px) { [data-show-mobile] { display: flex; } [data-hide-mobile] { display: none !important; } }
+@media (max-width: 860px) { [data-show-mobile] { display: flex; } [class="hide-on-mobile"] { display: none !important; } }
 [data-seg] input { position: absolute; opacity: 0; pointer-events: none; }
 [data-seg] input:checked + span { background: #fff; color: var(--ink); box-shadow: 0 2px 6px rgba(26,17,71,.10); }
 [data-faq] summary::-webkit-details-marker { display: none; }
@@ -53,11 +54,11 @@ input, select, textarea, button { font-family: var(--font-sans); }
     </nav>
 
     <div style="margin-left:auto;display:flex;align-items:center;gap:12px">
-      <span data-hide-mobile style="display:flex;flex-direction:column;line-height:1.15;text-align:right">
+      <span class="hide-on-mobile" style="display:flex;flex-direction:column;line-height:1.15;text-align:right">
         <span style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted)">24/7 Helpline</span>
         <span style="font-size:15px;font-weight:800;color:var(--ink)">+91 7317564794</span>
       </span>
-      <a data-hide-mobile href="tel:+917317564794" style="display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 16px 34px -18px rgba(220,38,38,.85);white-space:nowrap" style-hover="transform:translateY(-1px);box-shadow:0 20px 40px -18px rgba(220,38,38,.95)">
+      <a class="hide-on-mobile" href="tel:+917317564794" style="display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 16px 34px -18px rgba(220,38,38,.85);white-space:nowrap" style-hover="transform:translateY(-1px);box-shadow:0 20px 40px -18px rgba(220,38,38,.95)">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg>
         Call Emergency
       </a>
