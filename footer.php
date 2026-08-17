@@ -47,7 +47,7 @@
           <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Areas We Serve</a></li>
           <li><a href="/blog/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Blog</a></li>
           <li><a href="/#faqs" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">FAQs</a></li>
-          <li><a href="/#contact" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Contact</a></li>
+          <li><a href="/contact" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Contact</a></li>
         </ul>
       </div>
 
@@ -66,8 +66,8 @@
       <p style="margin:0;font-size:13px;color:rgba(255,255,255,.5)">© <span>2026</span> {{ brand }}. All rights reserved. <span style="color:rgba(255,255,255,.35)">[Replace placeholders before publishing]</span></p>
       <div style="display:flex;flex-wrap:wrap;gap:20px">
         <a href="privacy-policy" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Privacy Policy</a>
-        <a href="/#contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Terms &amp; Conditions</a>
-        <a href="/#contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Disclaimer</a>
+        <a href="/contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Terms &amp; Conditions</a>
+        <a href="/contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Disclaimer</a>
       </div>
     </div>
     <p style="margin:0;padding-bottom:26px;font-size:12px;line-height:1.6;color:rgba(255,255,255,.38);max-width:90ch">This page describes ambulance transportation services only. It does not provide medical advice or diagnosis. In a life-threatening emergency, contact your nearest hospital emergency department.</p>

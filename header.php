@@ -12,8 +12,8 @@
 <script src="/_ds/ethical-healthcare-community-design-syst-6ce9bd81-787b-44c9-bdfb-94df1770d8a1/_ds_bundle.js"></script>
 <script src="/image-slot.js"></script>
 <style>
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--canvas); }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { margin: 0; background: var(--canvas); overflow-x: hidden; }
 section[id], div[id] { scroll-margin-top: 96px; }
 img, svg { display: block; }
 input, select, textarea, button { font-family: var(--font-sans); }
@@ -40,7 +40,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle><path d="M6 11h4M8 9v4"></path></svg>
       </span>
       <span style="display:flex;flex-direction:column;line-height:1.1">
-        <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">{{ brand }}</span>
+        <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">NCR Ambulance</span>
         <span style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted)">Ambulance Service · Delhi NCR</span>
       </span>
     </a>
@@ -49,7 +49,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
       <a href="/#top" style="font-size:15px;font-weight:600;color:var(--ink);text-decoration:none">Home</a>
       <a href="/#about" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">About Us</a>
       <a href="/blog/" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Blog</a>
-      <a href="/#contact" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Contact</a>
+      <a href="/contact" style="font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none">Contact</a>
     </nav>
 
     <div style="margin-left:auto;display:flex;align-items:center;gap:12px">
@@ -57,23 +57,23 @@ input, select, textarea, button { font-family: var(--font-sans); }
         <span style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted)">24/7 Helpline</span>
         <span style="font-size:15px;font-weight:800;color:var(--ink)">+91 7317564794</span>
       </span>
-      <a href="tel:+917317564794" style="display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 16px 34px -18px rgba(220,38,38,.85);white-space:nowrap" style-hover="transform:translateY(-1px);box-shadow:0 20px 40px -18px rgba(220,38,38,.95)">
+      <a data-hide-mobile href="tel:+917317564794" style="display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 16px 34px -18px rgba(220,38,38,.85);white-space:nowrap" style-hover="transform:translateY(-1px);box-shadow:0 20px 40px -18px rgba(220,38,38,.95)">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg>
         Call Emergency
       </a>
-      <button data-nav-toggle type="button" onClick="{{ toggleMenu }}" aria-label="Open menu" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;flex:none">
+      <button data-nav-toggle type="button" onclick="var m = document.getElementById('mobile-menu'); m.style.display = m.style.display === 'none' ? 'block' : 'none';" aria-label="Open menu" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;flex:none">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
       </button>
     </div>
   </div>
 
-  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div id="mobile-menu" style="display:none;">
     <div style="border-top:1px solid var(--line);background:var(--card);padding:16px clamp(16px,4vw,64px) 24px;display:grid;gap:4px">
-      <a href="/#top" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Home</a>
-      <a href="/#about" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">About Us</a>
-      <a href="/blog/" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Blog</a>
-      <a href="/#contact" onClick="{{ closeMenu }}" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none">Contact</a>
+      <a href="/#top" onclick="document.getElementById('mobile-menu').style.display='none'" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Home</a>
+      <a href="/#about" onclick="document.getElementById('mobile-menu').style.display='none'" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">About Us</a>
+      <a href="/blog/" onclick="document.getElementById('mobile-menu').style.display='none'" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-soft)">Blog</a>
+      <a href="/contact" onclick="document.getElementById('mobile-menu').style.display='none'" style="padding:12px 4px;font-weight:600;color:var(--ink);text-decoration:none">Contact</a>
     </div>
-  </sc-if>
+  </div>
 </header>
 
