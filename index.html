@@ -29,7 +29,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; } }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MedicalBusiness","name":"[BRAND NAME PLACEHOLDER]","description":"24/7 ambulance service across Delhi NCR — emergency, ICU, ALS, BLS, cardiac, ventilator and neonatal ambulances.","telephone":"+91-XXXXX-XXXXX","areaServed":["Delhi","Gurugram","Noida","Ghaziabad","Faridabad","Greater Noida"],"address":{"@type":"PostalAddress","streetAddress":"[ADDRESS PLACEHOLDER]","addressLocality":"New Delhi","addressRegion":"Delhi NCR","postalCode":"[PIN]","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}
+{"@context":"https://schema.org","@type":"MedicalBusiness","name":"[BRAND NAME PLACEHOLDER]","description":"24/7 ambulance service across Delhi NCR — emergency, ICU, ALS, BLS, cardiac, ventilator and neonatal ambulances.","telephone":"+91 7317564794","areaServed":["Delhi","Gurugram","Noida","Ghaziabad","Faridabad","Greater Noida"],"address":{"@type":"PostalAddress","streetAddress":"[ADDRESS PLACEHOLDER]","addressLocality":"New Delhi","addressRegion":"Delhi NCR","postalCode":"[PIN]","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}
 </script>
 </helmet>
 
@@ -177,7 +177,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
               </label>
               <label style="display:grid;gap:7px">
                 <span style="font-size:13px;font-weight:700;color:var(--ink)">Mobile Number</span>
-                <input name="mobile" type="tel" required placeholder="+91 XXXXX XXXXX" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)">
+                <input name="mobile" type="tel" required placeholder="+91 7317564794" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)">
               </label>
               <label style="display:grid;gap:7px">
                 <span style="font-size:13px;font-weight:700;color:var(--ink)">Pickup Location</span>
@@ -939,7 +939,7 @@ input, select, textarea, button { font-family: var(--font-sans); }
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;brandName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[Brand Name]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 XXXXX XXXXX&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 XXXXX XXXXX&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;showFloatingCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;},&quot;showTestimonials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;brandName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[Brand Name]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 7317564794&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 7317564794&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;showFloatingCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;},&quot;showTestimonials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;}}">
 class Component extends DCLogic {
   state = { menuOpen: false, sent: false };
 
@@ -974,8 +974,8 @@ class Component extends DCLogic {
 
   renderVals() {
     const brand = this.props.brandName ?? '[Brand Name]';
-    const phone = this.props.phone ?? '+91 XXXXX XXXXX';
-    const wa = this.props.whatsappNumber ?? '+91 XXXXX XXXXX';
+    const phone = this.props.phone ?? '+91 7317564794';
+    const wa = this.props.whatsappNumber ?? '+91 7317564794';
     const digits = (s) => String(s).replace(/[^0-9+]/g, '');
     const waDigits = String(wa).replace(/[^0-9]/g, '');
     return {
