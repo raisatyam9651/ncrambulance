@@ -396,7 +396,7 @@
     <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:clamp(32px,4vw,64px);align-items:center">
       <div data-reveal style="position:relative">
         <div style="width:100%;aspect-ratio:4/4.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-          <image-slot id="why-team" shape="rect" placeholder="PLACEHOLDER — drop a photo of your team assisting a patient"></image-slot>
+          <img src="assets/why_choose_ambulance.jpg" alt="Why Choose Our Ambulance Service" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div style="position:absolute;right:-8px;bottom:-22px;display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-lg)">
           <span style="width:44px;height:44px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;display:grid;place-items:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
@@ -592,7 +592,7 @@
         </div>
       </div>
       <div data-reveal style="width:100%;aspect-ratio:4/3.2;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-        <image-slot id="hospital-transfer" shape="rect" placeholder="PLACEHOLDER — drop a hospital / stretcher transfer photo"></image-slot>
+        <img src="assets/hospital_transfer.jpg" alt="Hospital Transfer & Medical Transportation" style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
   </section>

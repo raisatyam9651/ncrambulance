@@ -29,12 +29,12 @@
       <div>
         <h3 style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)">Service Areas</h3>
         <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
-          <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Delhi</a></li>
-          <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Gurgaon</a></li>
-          <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Noida</a></li>
-          <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ghaziabad</a></li>
-          <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Faridabad</a></li>
-          <li><a href="/#areas" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Greater Noida</a></li>
+          <li><a href="/ambulance-service/delhi/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Delhi</a></li>
+          <li><a href="/ambulance-service/gurgaon/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Gurgaon</a></li>
+          <li><a href="/ambulance-service/noida/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Noida</a></li>
+          <li><a href="/ambulance-service/ghaziabad/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ghaziabad</a></li>
+          <li><a href="/ambulance-service/faridabad/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Faridabad</a></li>
+          <li><a href="/ambulance-service/greater-noida/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Greater Noida</a></li>
         </ul>
       </div>
 
@@ -65,9 +65,9 @@
     <div style="margin-top:clamp(36px,4vw,56px);padding:22px 0;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
       <p style="margin:0;font-size:13px;color:rgba(255,255,255,.5)">© <span>2026</span> {{ brand }}. All rights reserved. <span style="color:rgba(255,255,255,.35)">[Replace placeholders before publishing]</span></p>
       <div style="display:flex;flex-wrap:wrap;gap:20px">
-        <a href="privacy-policy" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Privacy Policy</a>
-        <a href="/contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Terms &amp; Conditions</a>
-        <a href="/contact" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Disclaimer</a>
+        <a href="/privacy-policy.php" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Privacy Policy</a>
+        <a href="/terms-and-conditions.php" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Terms &amp; Conditions</a>
+        <a href="/disclaimer.php" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Disclaimer</a>
       </div>
     </div>
     <p style="margin:0;padding-bottom:26px;font-size:12px;line-height:1.6;color:rgba(255,255,255,.38);max-width:90ch">This page describes ambulance transportation services only. It does not provide medical advice or diagnosis. In a life-threatening emergency, contact your nearest hospital emergency department.</p>

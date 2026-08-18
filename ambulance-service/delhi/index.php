@@ -1,4 +1,4 @@
-<?php include '../header.php'; ?>
+<?php include '../../header.php'; ?>
 <main style="background:var(--canvas);overflow-x:hidden">
 
   <section style="position:relative;padding:clamp(40px,6vw,72px) 0 clamp(90px,10vw,130px)">
@@ -12,18 +12,18 @@
       <div>
         <span style="display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:999px;background:rgba(16,185,129,.10);color:#047857;font-size:13px;font-weight:700;letter-spacing:.02em">
           <span style="width:8px;height:8px;border-radius:50%;background:#10B981;animation:livepulse 2.4s ease-out infinite;flex:none"></span>
-          Ambulances available now · 24×7
+          Ambulances available now · 24Ã—7
         </span>
 
         <h1 style="margin:20px 0 0;font-weight:900;font-size:clamp(40px,5.6vw,72px);letter-spacing:-0.04em;line-height:0.98;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">
-          24/7 Ambulance Service in <span style="position:relative;display:inline-block">Dwarka, Delhi<img src="/assets/scribble-underline.svg" alt="" aria-hidden="true" style="position:absolute;left:0;bottom:-0.16em;width:100%;height:auto;pointer-events:none"></span>
+          24/7 Ambulance Service in <span style="position:relative;display:inline-block">Delhi<img src="/assets/scribble-underline.svg" alt="" aria-hidden="true" style="position:absolute;left:0;bottom:-0.16em;width:100%;height:auto;pointer-events:none"></span>
         </h1>
 
         <p style="margin:26px 0 0;font-weight:600;font-size:clamp(17px,1.7vw,21px);line-height:1.45;color:var(--ink);text-wrap:pretty;max-width:34ch">
           Fast, reliable &amp; well-equipped ambulances across Delhi, Gurgaon, Noida, Ghaziabad &amp; Faridabad.
         </p>
         <p style="margin:14px 0 0;font-size:16px;line-height:1.65;color:var(--ink-soft);text-wrap:pretty;max-width:52ch">
-          Get immediate ambulance assistance for emergency transfers, hospital admissions, patient transportation and critical care support — available 24 hours a day, 7 days a week.
+          Get immediate ambulance assistance for emergency transfers, hospital admissions, patient transportation and critical care support â€” available 24 hours a day, 7 days a week.
         </p>
 
         <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:center">
@@ -52,7 +52,7 @@
 
       <div style="position:relative">
         <div style="position:relative;width:100%;aspect-ratio:4/3.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--card)">
-          <img id="hero-ambulance" src="/assets/hero_ambulance.jpg" alt="Ambulance Service in Dwarka, Delhi" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img id="hero-ambulance" src="/assets/hero_ambulance.jpg" alt="Ambulance Service in Delhi" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <span style="position:absolute;top:20px;left:20px;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);font-size:13px;font-weight:700;color:#047857;box-shadow:var(--shadow-sm);pointer-events:none">
           <span style="width:8px;height:8px;border-radius:50%;background:#10B981;flex:none"></span>Dispatch desk online
@@ -77,11 +77,11 @@
           <div>
             <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Booking Request</span>
             <h2 style="margin:8px 0 6px;font-weight:800;font-size:clamp(26px,3vw,36px);letter-spacing:-0.02em;line-height:1.1;color:var(--ink)">Book an Ambulance</h2>
-            <p style="margin:0;font-size:15px;color:var(--ink-muted);max-width:46ch">Share a few details and our team will call you back. In an emergency, please call directly — it is always the fastest route.</p>
+            <p style="margin:0;font-size:15px;color:var(--ink-muted);max-width:46ch">Share a few details and our team will call you back. In an emergency, please call directly â€” it is always the fastest route.</p>
           </div>
           <span style="display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;background:rgba(16,185,129,.10);color:#047857;font-size:13px;font-weight:700">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
-            Requests answered 24×7
+            Requests answered 24Ã—7
           </span>
         </div>
 
@@ -107,7 +107,7 @@
               <label style="display:grid;gap:7px">
                 <span style="font-size:13px;font-weight:700;color:var(--ink)">Ambulance Type</span>
                 <select name="type" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px;appearance:none" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)">
-                  <option>Not sure — advise me</option>
+                  <option>Not sure â€” advise me</option>
                   <option>BLS Ambulance</option>
                   <option>ALS Ambulance</option>
                   <option>ICU Ambulance</option>
@@ -140,7 +140,7 @@
               </div>
               <label style="display:grid;gap:7px;grid-column:span 2;min-width:0">
                 <span style="font-size:13px;font-weight:700;color:var(--ink)">Additional Requirements <span style="font-weight:500;color:var(--ink-muted)">(optional)</span></span>
-                <textarea name="notes" rows="2" placeholder="Oxygen, ventilator, stretcher, floor number, attendant travelling…" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px;resize:vertical" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)"></textarea>
+                <textarea name="notes" rows="2" placeholder="Oxygen, ventilator, stretcher, floor number, attendant travellingâ€¦" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px;resize:vertical" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)"></textarea>
               </label>
             </div>
 
@@ -158,7 +158,7 @@
                 WhatsApp Booking
               </a>
             </div>
-            <p style="margin:2px 0 0;font-size:12px;color:var(--ink-muted)">Your details are used only to arrange this ambulance request. <span style="color:var(--ink-muted)">[Demo form — connect to your CRM or WhatsApp API]</span></p>
+            <p style="margin:2px 0 0;font-size:12px;color:var(--ink-muted)">Your details are used only to arrange this ambulance request. <span style="color:var(--ink-muted)">[Demo form â€” connect to your CRM or WhatsApp API]</span></p>
           </form>
         </sc-if>
 
@@ -169,7 +169,7 @@
             </span>
             <div style="flex:1 1 260px">
               <h3 style="margin:0;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">Request received</h3>
-              <p style="margin:6px 0 0;font-size:15px;color:var(--ink-soft)">Our dispatch team will call you back on the number you shared. If this is an emergency, please call the helpline now — it is always faster.</p>
+              <p style="margin:6px 0 0;font-size:15px;color:var(--ink-soft)">Our dispatch team will call you back on the number you shared. If this is an emergency, please call the helpline now â€” it is always faster.</p>
             </div>
             <div style="display:flex;gap:10px;flex-wrap:wrap">
               <a href="{{ telHref }}" style="display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 16px 34px -18px rgba(220,38,38,.85)">Call {{ phone }}</a>
@@ -217,8 +217,8 @@
       <div data-reveal style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:24px;margin-bottom:clamp(30px,4vw,48px)">
         <div style="max-width:56ch">
           <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Ambulance Services</span>
-          <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Complete Ambulance Services Across Dwarka, Delhi</h2>
-          <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">From a basic patient shift to a ventilator-equipped critical care transfer — one helpline, the right ambulance dispatched for the patient's condition.</p>
+          <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Complete Ambulance Services Across Delhi</h2>
+          <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">From a basic patient shift to a ventilator-equipped critical care transfer â€” one helpline, the right ambulance dispatched for the patient's condition.</p>
         </div>
         <a href="{{ telHref }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 22px;border-radius:16px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg>
@@ -296,7 +296,7 @@
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
           <span style="width:46px;height:46px;border-radius:16px;background:var(--purple-100);color:var(--purple-600);display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-4 8 4v13"></path><path d="M9 21v-5h6v5"></path><path d="M12 8v4M10 10h4"></path></svg></span>
           <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Hospital-to-Hospital Transfer</h3>
-          <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Planned shifting between hospitals anywhere across Dwarka, Delhi.</p>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Planned shifting between hospitals anywhere across Delhi.</p>
           <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
         <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(139,92,246,.35)">
@@ -396,7 +396,7 @@
     <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:clamp(32px,4vw,64px);align-items:center">
       <div data-reveal style="position:relative">
         <div style="width:100%;aspect-ratio:4/4.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-          <image-slot id="why-team" shape="rect" placeholder="PLACEHOLDER — drop a photo of your team assisting a patient"></image-slot>
+          <img src="/assets/why_choose_ambulance.jpg" alt="Why Choose Our Ambulance Service" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div style="position:absolute;right:-8px;bottom:-22px;display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-lg)">
           <span style="width:44px;height:44px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;display:grid;place-items:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
@@ -410,11 +410,11 @@
       <div data-reveal>
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Why Choose Us</span>
         <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Why Choose Our Ambulance Service?</h2>
-        <p style="margin:0 0 26px;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty;max-width:52ch">When a family is under stress, the details matter — a clean vehicle, working equipment, a trained attendant, and someone who picks up the phone.</p>
+        <p style="margin:0 0 26px;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty;max-width:52ch">When a family is under stress, the details matter â€” a clean vehicle, working equipment, a trained attendant, and someone who picks up the phone.</p>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px">
           <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;background:var(--canvas);border-radius:18px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span style="font-size:14.5px;font-weight:600;color:var(--ink)">24/7 emergency availability</span></div>
-          <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;background:var(--canvas);border-radius:18px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M4 17a8 8 0 1 1 16 0"></path><path d="m12 15 4-4"></path></svg><span style="font-size:14.5px;font-weight:600;color:var(--ink)">Fast response across Dwarka, Delhi</span></div>
+          <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;background:var(--canvas);border-radius:18px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M4 17a8 8 0 1 1 16 0"></path><path d="m12 15 4-4"></path></svg><span style="font-size:14.5px;font-weight:600;color:var(--ink)">Fast response across Delhi</span></div>
           <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;background:var(--canvas);border-radius:18px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle></svg><span style="font-size:14.5px;font-weight:600;color:var(--ink)">Well-maintained ambulances</span></div>
           <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;background:var(--canvas);border-radius:18px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="9" cy="8" r="3"></circle><path d="M3 19a6 6 0 0 1 12 0"></path><path d="M16 6a3 3 0 0 1 0 6"></path></svg><span style="font-size:14.5px;font-weight:600;color:var(--ink)">Trained medical staff</span></div>
           <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;background:var(--canvas);border-radius:18px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><rect x="3" y="4" width="18" height="13" rx="3"></rect><path d="M6 11h2.5l1.5-3 2 6 1.5-3H18"></path></svg><span style="font-size:14.5px;font-weight:600;color:var(--ink)">Advanced medical equipment</span></div>
@@ -432,8 +432,8 @@
     <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
       <div data-reveal style="max-width:58ch;margin-bottom:clamp(30px,4vw,48px)">
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Areas We Serve</span>
-        <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Ambulance Service Across Dwarka, Delhi</h2>
-        <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Delhi, Gurgaon, Noida, Ghaziabad, Faridabad and Greater Noida — one number for the whole region.</p>
+        <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Ambulance Service Across Delhi</h2>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Delhi, Gurgaon, Noida, Ghaziabad, Faridabad and Greater Noida â€” one number for the whole region.</p>
       </div>
 
       <div data-reveal style="position:relative;width:100%;aspect-ratio:16/8.5;min-height:300px;background:var(--card);border:1px solid var(--line);border-radius:44px;box-shadow:var(--shadow-sm);overflow:hidden;margin-bottom:clamp(20px,2.5vw,28px)">
@@ -452,14 +452,14 @@
         <span style="position:absolute;left:72%;top:24%;transform:translate(-50%,-50%);padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13.5px;font-weight:700;box-shadow:var(--shadow-sm);white-space:nowrap">Ghaziabad</span>
         <span style="position:absolute;left:50%;top:82%;transform:translate(-50%,-50%);padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13.5px;font-weight:700;box-shadow:var(--shadow-sm);white-space:nowrap">Faridabad</span>
         <span style="position:absolute;left:84%;top:76%;transform:translate(-50%,-50%);padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13.5px;font-weight:700;box-shadow:var(--shadow-sm);white-space:nowrap">Greater Noida</span>
-        <span style="position:absolute;left:24px;bottom:20px;font-size:12px;font-weight:600;color:var(--ink-muted)">Stylised coverage map — not to scale</span>
+        <span style="position:absolute;left:24px;bottom:20px;font-size:12px;font-weight:600;color:var(--ink-muted)">Stylised coverage map â€” not to scale</span>
       </div>
 
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:clamp(14px,1.6vw,20px)">
         <div style="background:var(--card);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow-sm)" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
           <h3 style="margin:0 0 14px;font-size:18px;font-weight:800;color:var(--ink)">Delhi</h3>
           <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">South Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">North Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">East Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">West Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Central Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Dwarka</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Rohini</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Saket</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Vasant Kunj</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Janakpuri</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Lajpat Nagar</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Karol Bagh</span>
+            <span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">South Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">North Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">East Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">West Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Central Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Delhi</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Rohini</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Saket</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Vasant Kunj</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Janakpuri</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Lajpat Nagar</span><span style="padding:5px 11px;border-radius:999px;background:var(--canvas);font-size:12.5px;font-weight:600;color:var(--ink-soft)">Karol Bagh</span>
           </div>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow-sm)" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
@@ -512,7 +512,7 @@
             <span style="flex:1;border-top:2px dashed var(--line)"></span>
           </div>
           <h3 style="margin:0;font-size:19px;font-weight:800;color:var(--ink)">Call or WhatsApp</h3>
-          <p style="margin:0;font-size:14.5px;line-height:1.6;color:var(--ink-soft)">Contact our emergency team on the 24×7 helpline.</p>
+          <p style="margin:0;font-size:14.5px;line-height:1.6;color:var(--ink-soft)">Contact our emergency team on the 24Ã—7 helpline.</p>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;padding:26px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:14px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
           <div style="display:flex;align-items:center;gap:12px">
@@ -592,7 +592,7 @@
         </div>
       </div>
       <div data-reveal style="width:100%;aspect-ratio:4/3.2;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-        <image-slot id="hospital-transfer" shape="rect" placeholder="PLACEHOLDER — drop a hospital / stretcher transfer photo"></image-slot>
+        <img src="/assets/hospital_transfer.jpg" alt="Hospital Transfer & Medical Transportation" style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
   </section>
@@ -602,7 +602,7 @@
       <div data-reveal style="max-width:54ch;margin-bottom:clamp(28px,3.5vw,44px)">
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Ambulance Equipment</span>
         <h2 style="margin:10px 0 12px;font-weight:800;font-size:clamp(28px,3.6vw,44px);letter-spacing:-0.02em;line-height:1.05;color:var(--ink);text-wrap:balance">What our ambulances carry</h2>
-        <p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Equipment varies by ambulance type — tell us the patient's condition and we will confirm exactly what will be on board.</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Equipment varies by ambulance type â€” tell us the patient's condition and we will confirm exactly what will be on board.</p>
       </div>
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(168px,45%),1fr));gap:12px">
         <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:22px 14px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-xs)" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h9a3 3 0 1 0-3-3"></path><path d="M4 12h13a3 3 0 1 1-3 3"></path><path d="M4 16h6"></path></svg><span style="font-size:14px;font-weight:700;color:var(--ink)">Ventilator</span></div>
@@ -625,28 +625,28 @@
       <div data-reveal style="max-width:52ch;margin-bottom:clamp(28px,3.5vw,44px)">
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Testimonials</span>
         <h2 style="margin:10px 0 12px;font-weight:800;font-size:clamp(28px,3.6vw,44px);letter-spacing:-0.02em;line-height:1.05;color:var(--ink);text-wrap:balance">What Our Patients &amp; Families Say</h2>
-        <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-muted)">[PLACEHOLDER — replace with real, verifiable reviews before publishing. Toggle this section off in Tweaks until then.]</p>
+        <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-muted)">[PLACEHOLDER â€” replace with real, verifiable reviews before publishing. Toggle this section off in Tweaks until then.]</p>
       </div>
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(14px,1.6vw,20px)">
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"Very quick response and the ambulance was properly equipped. The team was professional and helpful throughout the hospital transfer."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Saket, Delhi</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Saket, Delhi</span></figcaption>
         </figure>
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"We needed an ICU ambulance late at night from Noida to Delhi. The coordinator explained everything clearly and stayed on the call until pickup."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Noida</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Noida</span></figcaption>
         </figure>
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"Booked a planned transfer for my father from Gurgaon. Ambulance arrived on time, the attendant was patient with him, and the vehicle was clean."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Gurgaon</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Gurgaon</span></figcaption>
         </figure>
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"Called at 2 am and someone picked up immediately. They asked the right questions and sent the ambulance type they said they would."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Ghaziabad</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Ghaziabad</span></figcaption>
         </figure>
       </div>
     </div>
@@ -661,7 +661,7 @@
           <p style="margin:6px 0 0;font-size:14px;font-weight:600;color:var(--ink-muted)">Emergency availability</p>
         </div>
         <div style="background:var(--card);padding:34px 26px;text-align:center">
-          <p style="margin:0;font-weight:900;font-size:clamp(30px,3.4vw,42px);letter-spacing:-0.03em;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Dwarka, Delhi</p>
+          <p style="margin:0;font-weight:900;font-size:clamp(30px,3.4vw,42px);letter-spacing:-0.03em;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Delhi</p>
           <p style="margin:6px 0 0;font-size:14px;font-weight:600;color:var(--ink-muted)">Service coverage</p>
         </div>
         <div style="background:var(--card);padding:34px 26px;text-align:center">
@@ -676,6 +676,16 @@
     </div>
   </section>
 
+  
+  <section style="background:var(--canvas);padding:clamp(40px,7vw,80px) 0;border-bottom:1px solid var(--line)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
+      <h2 style="margin:0 0 12px;font-weight:800;font-size:clamp(24px,3vw,36px);letter-spacing:-0.02em;color:var(--ink)">Areas We Cover in Delhi</h2>
+      <p style="margin:0;font-size:16px;line-height:1.65;color:var(--ink-soft);max-width:80ch">
+        Our emergency ambulance network extends across all major neighborhoods and localities in Delhi, including: <strong>South Delhi, North Delhi, West Delhi, East Delhi, Connaught Place, Vasant Kunj, Rohini, Dwarka</strong>. We ensure rapid response times to these areas for both emergency and planned patient transfers.
+      </p>
+    </div>
+  </section>
+  
   <section id="faqs" style="background:var(--card);padding:clamp(64px,9vw,120px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
     <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
       <div data-reveal style="max-width:52ch;margin-bottom:clamp(28px,3.5vw,44px)">
@@ -684,12 +694,12 @@
       </div>
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:12px 20px;align-items:start">
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
-          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Is ambulance service available 24/7 in Dwarka, Delhi?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
+          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Is ambulance service available 24/7 in Delhi?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
           <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Yes. Our helpline is answered 24 hours a day, 7 days a week, including holidays, across Delhi, Gurgaon, Noida, Ghaziabad and Faridabad.</p>
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
-          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">How can I book an ambulance in Delhi?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
-          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Call the helpline for anything urgent — it is the fastest route. For planned transfers you can also use the booking form on this page or message us on WhatsApp.</p>
+          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">How quickly can an ambulance reach Connaught Place or South Delhi?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
+          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">We have ambulances stationed across Delhi for rapid dispatch. We typically reach major areas within 15-20 minutes depending on traffic.</p>
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
           <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Do you provide ICU ambulance service?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
@@ -700,12 +710,12 @@
           <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Yes. Ventilator-equipped ambulances are available on request. Please mention the patient's condition on the call so the right vehicle and staff are assigned.</p>
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
-          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Can I book an ambulance from Gurgaon to Delhi?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
-          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Yes. Transfers between any two points in Dwarka, Delhi are supported, including Gurgaon to Delhi hospital admissions and returns.</p>
+          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Do you transfer patients from Delhi hospitals to other NCR cities?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
+          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Yes, we specialize in seamless hospital-to-hospital transfers across the entire Delhi NCR region, including Gurgaon and Noida.</p>
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
-          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Do you provide ambulance service in Noida?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
-          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Yes — Noida and Greater Noida are covered, including Sector 18, 62, 15, 16 and 27 and the surrounding hospitals.</p>
+          <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Do you transfer patients from Delhi hospitals to other NCR cities?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
+          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Yes, we specialize in seamless hospital-to-hospital transfers across the entire Delhi NCR region, including Gurgaon and Noida.</p>
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
           <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Do you provide hospital-to-hospital transfers?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
@@ -717,7 +727,7 @@
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
           <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">What is the difference between BLS and ALS ambulance?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
-          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">A BLS ambulance carries basic life support — stretcher, oxygen, first-aid equipment and a trained attendant. An ALS ambulance adds advanced life support such as cardiac monitoring, emergency medicines and trained medical staff.</p>
+          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">A BLS ambulance carries basic life support â€” stretcher, oxygen, first-aid equipment and a trained attendant. An ALS ambulance adds advanced life support such as cardiac monitoring, emergency medicines and trained medical staff.</p>
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
           <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Do you provide neonatal ambulance service?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
@@ -738,7 +748,7 @@
   <section id="contact" style="padding:clamp(64px,9vw,110px) 0">
     <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
       <div data-reveal style="text-align:center;max-width:820px;margin:0 auto">
-        <h2 style="margin:0 0 16px;font-weight:900;font-size:clamp(30px,4.4vw,56px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Need Safe &amp; Reliable Ambulance Service in Dwarka, Delhi?</h2>
+        <h2 style="margin:0 0 16px;font-weight:900;font-size:clamp(30px,4.4vw,56px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Need Safe &amp; Reliable Ambulance Service in Delhi?</h2>
         <p style="margin:0 auto 30px;font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:56ch;text-wrap:pretty">Call our emergency helpline or WhatsApp us to arrange the right ambulance for your patient.</p>
         <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
           <a href="{{ telHref }}" style="display:inline-flex;align-items:center;gap:11px;padding:20px 32px;border-radius:20px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 24px 56px -20px rgba(220,38,38,.9)" style-hover="transform:translateY(-2px)">
@@ -757,4 +767,6 @@
   </section>
 </main>
 
-<?php include '../footer.php'; ?>
+<?php include '../../footer.php'; ?>
+
+
