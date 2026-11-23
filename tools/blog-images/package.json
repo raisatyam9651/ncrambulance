@@ -1,0 +1,14 @@
+{
+  "name": "ncr-ambulance-blog-images",
+  "private": true,
+  "type": "module",
+  "description": "Generates featured images and step-by-step infographic cards for blog posts from blog/<slug>/post.json",
+  "scripts": {
+    "build": "node generate.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.0",
+    "lucide-static": "^0.460.0",
+    "puppeteer-core": "^23.0.0"
+  }
+}
