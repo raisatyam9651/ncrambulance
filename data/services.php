@@ -1,0 +1,166 @@
+<?php
+/**
+ * The 8 ambulance services that get a page in every district.
+ * `{place}` is replaced with the district / state name at render time.
+ * Keep claims factual: we are a 24/7 booking & dispatch helpline working with partner ambulance operators.
+ */
+return [
+    'emergency-ambulance' => [
+        'name'  => 'Emergency Ambulance',
+        'short' => 'Emergency',
+        'image' => '/assets/img/emergency-ambulance.webp',
+        'alt'   => 'Emergency ambulance on the road',
+        'card'  => 'Rapid dispatch for accidents, breathing difficulty, chest pain, stroke signs and sudden collapse.',
+        'intro' => 'An emergency ambulance is the fastest way to move a patient who suddenly needs hospital care. One call to our helpline and we locate the nearest available ambulance in {place}, share the driver\'s number with you and stay on the line until the patient is on the way.',
+        'when'  => [
+            'Road accidents and serious injuries',
+            'Chest pain, breathlessness or suspected heart attack',
+            'Signs of stroke — face drooping, arm weakness, slurred speech',
+            'Unconsciousness, seizures or sudden collapse',
+            'Pregnancy emergencies and heavy bleeding',
+        ],
+        'equip' => ['Stretcher & scoop', 'Oxygen cylinder', 'First-aid & trauma kit', 'Suction unit', 'Trained driver & attendant'],
+        'faqs'  => [
+            ['How do I book an emergency ambulance in {place}?', 'Call ' . '{phone}' . ' or message us on WhatsApp with the pickup location. Our dispatch desk confirms the nearest available ambulance and shares the driver\'s contact with you.'],
+            ['What details should I keep ready?', 'The exact pickup address or a landmark, the patient\'s condition, the hospital you prefer and a working mobile number. Sharing live location on WhatsApp helps the driver reach you faster.'],
+        ],
+    ],
+    'icu-ambulance' => [
+        'name'  => 'ICU Ambulance',
+        'short' => 'ICU',
+        'image' => '/assets/img/icu-ambulance.webp',
+        'alt'   => 'ICU ambulance interior with stretcher and monitoring equipment',
+        'card'  => 'Mobile ICU set-up with cardiac monitor, ventilator support and a critical-care team for unstable patients.',
+        'intro' => 'An ICU ambulance is a moving critical-care unit. It is used when a patient in {place} needs continuous monitoring and life support during the journey — for example a transfer from a district hospital to a tertiary care centre.',
+        'when'  => [
+            'Shifting a critical patient from one ICU to another',
+            'Patients on oxygen or ventilator support',
+            'Unstable blood pressure, heart rhythm or breathing',
+            'Post-surgery transfers that need monitoring',
+            'Long-distance transfers to a bigger city hospital',
+        ],
+        'equip' => ['Multi-para cardiac monitor', 'Transport ventilator', 'Defibrillator', 'Syringe / infusion pumps', 'Suction & oxygen', 'Doctor or critical-care paramedic (on request)'],
+        'faqs'  => [
+            ['Is a doctor available in the ICU ambulance from {place}?', 'A doctor or critical-care paramedic can be arranged on request, subject to availability. Tell our dispatch desk the patient\'s condition so we can match the right crew.'],
+            ['Can an ICU ambulance be booked for an inter-city transfer?', 'Yes. ICU ambulances are commonly booked from {place} to larger cities for specialist treatment. Share the pickup and destination hospital and we will confirm the vehicle and crew.'],
+        ],
+    ],
+    'als-ambulance' => [
+        'name'  => 'ALS Ambulance',
+        'short' => 'ALS',
+        'image' => '/assets/img/als-ambulance.webp',
+        'alt'   => 'Paramedics loading a patient into an advanced life support ambulance',
+        'card'  => 'Advanced Life Support with monitor, defibrillator and emergency medicines for serious cases.',
+        'intro' => 'An ALS (Advanced Life Support) ambulance carries equipment and a trained crew to manage serious medical conditions on the way to hospital. It sits between a basic ambulance and a full ICU ambulance, and is a common choice for emergencies in {place}.',
+        'when'  => [
+            'Cardiac and respiratory emergencies',
+            'Serious accidents and trauma',
+            'Patients who may need airway management',
+            'Diabetic or stroke emergencies',
+            'Transfers where the patient may deteriorate',
+        ],
+        'equip' => ['Cardiac monitor', 'Defibrillator (AED)', 'Oxygen & airway kit', 'Emergency medicines', 'Suction unit', 'Trained paramedic'],
+        'faqs'  => [
+            ['What is the difference between ALS and BLS ambulance?', 'A BLS ambulance is for stable patients and basic care, while an ALS ambulance adds cardiac monitoring, a defibrillator, airway equipment and a paramedic trained in advanced life support.'],
+            ['Is an ALS ambulance available at night in {place}?', 'Our helpline works 24/7. Availability of a specific vehicle depends on partner operators near you — the dispatch desk will confirm before sending it.'],
+        ],
+    ],
+    'bls-ambulance' => [
+        'name'  => 'BLS Ambulance',
+        'short' => 'BLS',
+        'image' => '/assets/img/bls-ambulance.webp',
+        'alt'   => 'Basic life support ambulance with stretcher',
+        'card'  => 'Basic Life Support for stable patients — stretcher, oxygen and a trained attendant.',
+        'intro' => 'A BLS (Basic Life Support) ambulance is the right choice for stable patients who need safe, lying-down transport with oxygen on hand. In {place} it is most often booked for hospital admissions, discharges, check-ups and dialysis visits.',
+        'when'  => [
+            'Hospital admission or discharge',
+            'Dialysis, chemotherapy or scan appointments',
+            'Elderly or bed-ridden patients',
+            'Minor injuries and fractures',
+            'Shifting a stable patient between hospitals',
+        ],
+        'equip' => ['Stretcher', 'Oxygen cylinder', 'First-aid kit', 'Wheelchair (on request)', 'Trained attendant'],
+        'faqs'  => [
+            ['Can I book a BLS ambulance in advance in {place}?', 'Yes. For planned visits like dialysis or discharge, call or WhatsApp us with the date, time and address and we will schedule the ambulance.'],
+            ['Is oxygen available in a BLS ambulance?', 'Yes, BLS ambulances carry an oxygen cylinder. If the patient needs continuous monitoring, we will suggest an ALS or ICU ambulance instead.'],
+        ],
+    ],
+    'cardiac-ambulance' => [
+        'name'  => 'Cardiac Ambulance',
+        'short' => 'Cardiac',
+        'image' => '/assets/img/cardiac-ambulance.webp',
+        'alt'   => 'ECG monitor showing heart rhythm in a cardiac ambulance',
+        'card'  => 'Cardiac monitor, ECG and defibrillator for heart-attack and heart-rhythm emergencies.',
+        'intro' => 'A cardiac ambulance is equipped for heart emergencies. In a suspected heart attack every minute matters, so our dispatch desk in {place} sends the nearest ambulance with cardiac monitoring and a defibrillator and guides you on the nearest hospital with cardiac facilities.',
+        'when'  => [
+            'Chest pain or pressure, pain spreading to arm or jaw',
+            'Sudden breathlessness with sweating',
+            'Irregular or very fast heartbeat',
+            'Known heart patients who feel unwell',
+            'Transfer to a cath-lab or cardiac hospital',
+        ],
+        'equip' => ['12-lead ECG / cardiac monitor', 'Defibrillator', 'Oxygen', 'Emergency cardiac medicines', 'Trained paramedic'],
+        'faqs'  => [
+            ['What should I do while waiting for a cardiac ambulance?', 'Keep the patient seated and calm, loosen tight clothing and do not give food. Follow the instructions of the dispatch desk or a doctor on call.'],
+            ['Can you take the patient to a hospital with a cath lab?', 'Yes. Tell us your preferred hospital, or ask the dispatch desk for nearby hospitals in and around {place} that handle cardiac emergencies.'],
+        ],
+    ],
+    'ventilator-ambulance' => [
+        'name'  => 'Ventilator Ambulance',
+        'short' => 'Ventilator',
+        'image' => '/assets/img/ventilator-ambulance.webp',
+        'alt'   => 'Patient on ventilator support attended by a doctor',
+        'card'  => 'Transport ventilator and critical-care crew for patients who need breathing support.',
+        'intro' => 'A ventilator ambulance carries a transport ventilator so that patients who cannot breathe adequately on their own can be moved safely. Families in {place} usually book it to shift a ventilated patient to a higher centre or another hospital.',
+        'when'  => [
+            'Patients already on ventilator in an ICU',
+            'Severe breathing failure',
+            'Head injury or stroke patients needing airway support',
+            'Long-distance critical transfers',
+        ],
+        'equip' => ['Transport ventilator', 'Multi-para monitor', 'Oxygen supply', 'Suction & airway kit', 'Infusion pumps', 'Critical-care crew'],
+        'faqs'  => [
+            ['How is a ventilator ambulance different from an ICU ambulance?', 'Both are critical-care ambulances. A ventilator ambulance specifically confirms a working transport ventilator and a crew trained to manage it during the journey.'],
+            ['Do you arrange ventilator ambulances for long distances from {place}?', 'Yes. Share the patient\'s condition and the destination hospital; we will confirm a suitable vehicle, crew and oxygen backup for the distance.'],
+        ],
+    ],
+    'air-ambulance' => [
+        'name'  => 'Air Ambulance',
+        'short' => 'Air',
+        'image' => '/assets/img/air-ambulance.webp',
+        'alt'   => 'Air ambulance helicopter on a helipad at sunset',
+        'card'  => 'Charter aircraft with medical team for long-distance critical transfers, bed-to-bed.',
+        'intro' => 'An air ambulance moves a patient over long distances in hours instead of a full day by road. For patients in {place}, we coordinate a ground ambulance to the nearest airport, the medical flight and a ground ambulance at the destination — a bed-to-bed transfer.',
+        'when'  => [
+            'Critical patients who must reach a distant specialist hospital',
+            'Organ transplant or specialised surgery referrals',
+            'Long distances where road travel is unsafe for the patient',
+            'Repatriation of patients to their home city',
+        ],
+        'equip' => ['Charter aircraft or helicopter', 'ICU-grade monitor & ventilator', 'Doctor & flight paramedic', 'Ground ambulances at both ends'],
+        'faqs'  => [
+            ['How quickly can an air ambulance be arranged from {place}?', 'It depends on aircraft availability, airport permissions and the patient\'s condition. Call us early with the medical summary and destination so we can share timelines and a quote.'],
+            ['Does the air ambulance include ground transport?', 'Yes. We coordinate a ground ambulance from the hospital to the airport and from the destination airport to the receiving hospital.'],
+        ],
+    ],
+    'patient-transfer-ambulance' => [
+        'name'  => 'Patient Transfer Ambulance',
+        'short' => 'Patient Transfer',
+        'image' => '/assets/img/patient-transfer.webp',
+        'alt'   => 'Hospital stretcher in a corridor ready for patient transfer',
+        'card'  => 'Planned hospital-to-hospital, home-to-hospital and inter-city patient transport.',
+        'intro' => 'Patient transfer ambulances handle planned movement of patients — from home to hospital, between hospitals, or to another city. We help families in {place} pick the right ambulance type for the patient\'s condition and schedule it at the time they need.',
+        'when'  => [
+            'Hospital-to-hospital transfers',
+            'Discharge from hospital to home',
+            'Inter-city and inter-state patient transport',
+            'Railway station and airport transfers',
+            'Regular visits for dialysis or therapy',
+        ],
+        'equip' => ['BLS, ALS or ICU vehicle as required', 'Stretcher & wheelchair', 'Oxygen', 'Trained attendant or paramedic'],
+        'faqs'  => [
+            ['Can I book a patient transfer from {place} to another city?', 'Yes. Share the pickup, destination, patient condition and travel date. We will suggest the right ambulance type and confirm the fare before dispatch.'],
+            ['Can a family member travel with the patient?', 'Usually one attendant can travel in the ambulance. Let the dispatch desk know in advance so the seating can be confirmed.'],
+        ],
+    ],
+];

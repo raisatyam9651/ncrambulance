@@ -1,4 +1,19 @@
 RewriteEngine On
+
+# Dynamic XML sitemap (static pages + location pages + blog)
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Location pages. Real folders (legacy NCR pages such as /ambulance-service/noida/) are served as-is;
+# everything else under /ambulance-service/ is rendered by location.php from data/india.php.
+RewriteRule ^ambulance-service/?$ location.php [L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ambulance-service/.+$ location.php [L,QSA]
+
+# Keep internal helper folders private
+RewriteRule ^(data|inc|templates)/ - [F,L]
+
+# Extensionless URLs: /contact -> contact.php
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]

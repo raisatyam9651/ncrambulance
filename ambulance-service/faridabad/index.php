@@ -1,4 +1,10 @@
-<?php include '../../header.php'; ?>
+<?php
+$page_title = 'Ambulance Service in Faridabad | 24/7 ICU, ALS & Emergency Ambulance';
+$page_desc = 'Book an ambulance in Faridabad 24/7: emergency, ICU, ALS, BLS, cardiac and ventilator ambulances, hospital transfers and patient transport. Call +91 7317564794.';
+$page_tagline = 'Ambulance Service · Faridabad';
+$page_canonical = '/ambulance-service/faridabad/';
+include __DIR__ . '/../../header.php';
+?>
 <main style="background:var(--canvas);overflow-x:hidden">
 
   <section style="position:relative;padding:clamp(40px,6vw,72px) 0 clamp(90px,10vw,130px)">
@@ -12,7 +18,7 @@
       <div>
         <span style="display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:999px;background:rgba(16,185,129,.10);color:#047857;font-size:13px;font-weight:700;letter-spacing:.02em">
           <span style="width:8px;height:8px;border-radius:50%;background:#10B981;animation:livepulse 2.4s ease-out infinite;flex:none"></span>
-          Ambulances available now · 24Ã—7
+          Ambulances available now · 24×7
         </span>
 
         <h1 style="margin:20px 0 0;font-weight:900;font-size:clamp(40px,5.6vw,72px);letter-spacing:-0.04em;line-height:0.98;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">
@@ -23,7 +29,7 @@
           Fast, reliable &amp; well-equipped ambulances across Delhi, Gurgaon, Noida, Ghaziabad &amp; Faridabad.
         </p>
         <p style="margin:14px 0 0;font-size:16px;line-height:1.65;color:var(--ink-soft);text-wrap:pretty;max-width:52ch">
-          Get immediate ambulance assistance for emergency transfers, hospital admissions, patient transportation and critical care support â€” available 24 hours a day, 7 days a week.
+          Get immediate ambulance assistance for emergency transfers, hospital admissions, patient transportation and critical care support — available 24 hours a day, 7 days a week.
         </p>
 
         <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:center">
@@ -52,7 +58,7 @@
 
       <div style="position:relative">
         <div style="position:relative;width:100%;aspect-ratio:4/3.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--card)">
-          <img id="hero-ambulance" src="/assets/hero_ambulance.jpg" alt="Ambulance Service in Faridabad" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img id="hero-ambulance" src="/assets/img/hero_ambulance.webp" alt="Ambulance Service in Faridabad" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <span style="position:absolute;top:20px;left:20px;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);font-size:13px;font-weight:700;color:#047857;box-shadow:var(--shadow-sm);pointer-events:none">
           <span style="width:8px;height:8px;border-radius:50%;background:#10B981;flex:none"></span>Dispatch desk online
@@ -77,11 +83,11 @@
           <div>
             <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Booking Request</span>
             <h2 style="margin:8px 0 6px;font-weight:800;font-size:clamp(26px,3vw,36px);letter-spacing:-0.02em;line-height:1.1;color:var(--ink)">Book an Ambulance</h2>
-            <p style="margin:0;font-size:15px;color:var(--ink-muted);max-width:46ch">Share a few details and our team will call you back. In an emergency, please call directly â€” it is always the fastest route.</p>
+            <p style="margin:0;font-size:15px;color:var(--ink-muted);max-width:46ch">Share a few details and our team will call you back. In an emergency, please call directly — it is always the fastest route.</p>
           </div>
           <span style="display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;background:rgba(16,185,129,.10);color:#047857;font-size:13px;font-weight:700">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
-            Requests answered 24Ã—7
+            Requests answered 24×7
           </span>
         </div>
 
@@ -107,7 +113,7 @@
               <label style="display:grid;gap:7px">
                 <span style="font-size:13px;font-weight:700;color:var(--ink)">Ambulance Type</span>
                 <select name="type" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px;appearance:none" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)">
-                  <option>Not sure â€” advise me</option>
+                  <option>Not sure — advise me</option>
                   <option>BLS Ambulance</option>
                   <option>ALS Ambulance</option>
                   <option>ICU Ambulance</option>
@@ -140,7 +146,7 @@
               </div>
               <label style="display:grid;gap:7px;grid-column:span 2;min-width:0">
                 <span style="font-size:13px;font-weight:700;color:var(--ink)">Additional Requirements <span style="font-weight:500;color:var(--ink-muted)">(optional)</span></span>
-                <textarea name="notes" rows="2" placeholder="Oxygen, ventilator, stretcher, floor number, attendant travellingâ€¦" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px;resize:vertical" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)"></textarea>
+                <textarea name="notes" rows="2" placeholder="Oxygen, ventilator, stretcher, floor number, attendant travelling…" style="width:100%;box-sizing:border-box;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font-size:16px;resize:vertical" style-focus="outline:none;border-color:var(--purple-400);box-shadow:0 0 0 4px rgba(139,92,246,.14)"></textarea>
               </label>
             </div>
 
@@ -158,7 +164,7 @@
                 WhatsApp Booking
               </a>
             </div>
-            <p style="margin:2px 0 0;font-size:12px;color:var(--ink-muted)">Your details are used only to arrange this ambulance request. <span style="color:var(--ink-muted)">[Demo form â€” connect to your CRM or WhatsApp API]</span></p>
+            <p style="margin:2px 0 0;font-size:12px;color:var(--ink-muted)">Your details are used only to arrange this ambulance request. <span style="color:var(--ink-muted)">[Demo form — connect to your CRM or WhatsApp API]</span></p>
           </form>
         </sc-if>
 
@@ -169,7 +175,7 @@
             </span>
             <div style="flex:1 1 260px">
               <h3 style="margin:0;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">Request received</h3>
-              <p style="margin:6px 0 0;font-size:15px;color:var(--ink-soft)">Our dispatch team will call you back on the number you shared. If this is an emergency, please call the helpline now â€” it is always faster.</p>
+              <p style="margin:6px 0 0;font-size:15px;color:var(--ink-soft)">Our dispatch team will call you back on the number you shared. If this is an emergency, please call the helpline now — it is always faster.</p>
             </div>
             <div style="display:flex;gap:10px;flex-wrap:wrap">
               <a href="{{ telHref }}" style="display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 16px 34px -18px rgba(220,38,38,.85)">Call {{ phone }}</a>
@@ -218,7 +224,7 @@
         <div style="max-width:56ch">
           <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Ambulance Services</span>
           <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Complete Ambulance Services Across Faridabad</h2>
-          <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">From a basic patient shift to a ventilator-equipped critical care transfer â€” one helpline, the right ambulance dispatched for the patient's condition.</p>
+          <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">From a basic patient shift to a ventilator-equipped critical care transfer — one helpline, the right ambulance dispatched for the patient's condition.</p>
         </div>
         <a href="{{ telHref }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 22px;border-radius:16px;border:1px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap" style-hover="background:rgba(26,17,71,.04);transform:translateY(-1px)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg>
@@ -311,6 +317,12 @@
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Trained medical staff accompanying the patient throughout the journey.</p>
           <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
+        <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(217,119,6,.35)">
+          <span style="width:46px;height:46px;border-radius:16px;background:rgba(251,191,36,.18);color:#B45309;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg></span>
+          <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Air Ambulance</h3>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Bed-to-bed medical flights for long-distance critical transfers, with ground ambulances at both ends.</p>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+        </div>
       </div>
     </div>
   </section>
@@ -325,6 +337,7 @@
 
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(268px,100%),1fr));gap:clamp(14px,1.6vw,20px)">
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:16px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+          <div class="type-photo"><img src="/assets/img/bls-ambulance.webp" alt="BLS ambulance with stretcher and oxygen" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">BLS Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:rgba(16,185,129,.12);color:#047857;font-size:12px;font-weight:700">Stable</span>
@@ -339,6 +352,7 @@
           </ul>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:16px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+          <div class="type-photo"><img src="/assets/img/als-ambulance.webp" alt="Paramedics loading a patient into an ALS ambulance" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">ALS Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:var(--purple-100);color:var(--purple-700);font-size:12px;font-weight:700">Advanced</span>
@@ -354,6 +368,7 @@
         </div>
         <div style="background:var(--card);border:2px solid transparent;background-image:linear-gradient(#fff,#fff),linear-gradient(135deg,#fbbf24 0%,#F59E0B 100%);background-origin:border-box;background-clip:padding-box,border-box;border-radius:32px;box-shadow:var(--shadow-lg);padding:28px;display:flex;flex-direction:column;gap:16px;position:relative" style-hover="transform:translateY(-3px)">
           <span style="position:absolute;top:-13px;right:24px;padding:6px 14px;border-radius:999px;background:linear-gradient(135deg,#fbbf24 0%,#F59E0B 100%);color:#1a1147;font-size:12px;font-weight:800;letter-spacing:.02em;box-shadow:var(--shadow-glow-gold)">Most requested</span>
+          <div class="type-photo"><img src="/assets/img/icu-ambulance.webp" alt="ICU ambulance interior with monitoring equipment" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">ICU Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:rgba(220,38,38,.10);color:#DC2626;font-size:12px;font-weight:700">Critical</span>
@@ -368,6 +383,7 @@
           </ul>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:16px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+          <div class="type-photo"><img src="/assets/img/neonatal-ambulance.webp" alt="Newborn baby in a neonatal incubator" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">Neonatal Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:rgba(245,124,90,.14);color:#C2410C;font-size:12px;font-weight:700">Newborn</span>
@@ -396,7 +412,7 @@
     <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:clamp(32px,4vw,64px);align-items:center">
       <div data-reveal style="position:relative">
         <div style="width:100%;aspect-ratio:4/4.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-          <img src="/assets/why_choose_ambulance.jpg" alt="Why Choose Our Ambulance Service" style="width:100%; height:100%; object-fit:cover;">
+          <img src="/assets/img/why_choose_ambulance.webp" alt="Why Choose Our Ambulance Service" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div style="position:absolute;right:-8px;bottom:-22px;display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-lg)">
           <span style="width:44px;height:44px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;display:grid;place-items:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
@@ -410,7 +426,7 @@
       <div data-reveal>
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Why Choose Us</span>
         <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Why Choose Our Ambulance Service?</h2>
-        <p style="margin:0 0 26px;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty;max-width:52ch">When a family is under stress, the details matter â€” a clean vehicle, working equipment, a trained attendant, and someone who picks up the phone.</p>
+        <p style="margin:0 0 26px;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty;max-width:52ch">When a family is under stress, the details matter — a clean vehicle, working equipment, a trained attendant, and someone who picks up the phone.</p>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px">
           <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;background:var(--canvas);border-radius:18px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span style="font-size:14.5px;font-weight:600;color:var(--ink)">24/7 emergency availability</span></div>
@@ -433,7 +449,7 @@
       <div data-reveal style="max-width:58ch;margin-bottom:clamp(30px,4vw,48px)">
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Areas We Serve</span>
         <h2 style="margin:10px 0 12px;font-weight:900;font-size:clamp(30px,4.2vw,52px);letter-spacing:-0.035em;line-height:1.02;text-wrap:balance;background:var(--grad-headline);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Ambulance Service Across Faridabad</h2>
-        <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Delhi, Gurgaon, Noida, Ghaziabad, Faridabad and Greater Noida â€” one number for the whole region.</p>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Delhi, Gurgaon, Noida, Ghaziabad, Faridabad and Greater Noida — one number for the whole region.</p>
       </div>
 
       <div data-reveal style="position:relative;width:100%;aspect-ratio:16/8.5;min-height:300px;background:var(--card);border:1px solid var(--line);border-radius:44px;box-shadow:var(--shadow-sm);overflow:hidden;margin-bottom:clamp(20px,2.5vw,28px)">
@@ -452,7 +468,7 @@
         <span style="position:absolute;left:72%;top:24%;transform:translate(-50%,-50%);padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13.5px;font-weight:700;box-shadow:var(--shadow-sm);white-space:nowrap">Ghaziabad</span>
         <span style="position:absolute;left:50%;top:82%;transform:translate(-50%,-50%);padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13.5px;font-weight:700;box-shadow:var(--shadow-sm);white-space:nowrap">Faridabad</span>
         <span style="position:absolute;left:84%;top:76%;transform:translate(-50%,-50%);padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-size:13.5px;font-weight:700;box-shadow:var(--shadow-sm);white-space:nowrap">Greater Noida</span>
-        <span style="position:absolute;left:24px;bottom:20px;font-size:12px;font-weight:600;color:var(--ink-muted)">Stylised coverage map â€” not to scale</span>
+        <span style="position:absolute;left:24px;bottom:20px;font-size:12px;font-weight:600;color:var(--ink-muted)">Stylised coverage map — not to scale</span>
       </div>
 
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:clamp(14px,1.6vw,20px)">
@@ -512,7 +528,7 @@
             <span style="flex:1;border-top:2px dashed var(--line)"></span>
           </div>
           <h3 style="margin:0;font-size:19px;font-weight:800;color:var(--ink)">Call or WhatsApp</h3>
-          <p style="margin:0;font-size:14.5px;line-height:1.6;color:var(--ink-soft)">Contact our emergency team on the 24Ã—7 helpline.</p>
+          <p style="margin:0;font-size:14.5px;line-height:1.6;color:var(--ink-soft)">Contact our emergency team on the 24×7 helpline.</p>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;padding:26px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:14px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
           <div style="display:flex;align-items:center;gap:12px">
@@ -592,7 +608,7 @@
         </div>
       </div>
       <div data-reveal style="width:100%;aspect-ratio:4/3.2;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-        <img src="/assets/hospital_transfer.jpg" alt="Hospital Transfer & Medical Transportation" style="width:100%; height:100%; object-fit:cover;">
+        <img src="/assets/img/hospital_transfer.webp" alt="Hospital Transfer &amp; Medical Transportation" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
   </section>
@@ -602,8 +618,9 @@
       <div data-reveal style="max-width:54ch;margin-bottom:clamp(28px,3.5vw,44px)">
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Ambulance Equipment</span>
         <h2 style="margin:10px 0 12px;font-weight:800;font-size:clamp(28px,3.6vw,44px);letter-spacing:-0.02em;line-height:1.05;color:var(--ink);text-wrap:balance">What our ambulances carry</h2>
-        <p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Equipment varies by ambulance type â€” tell us the patient's condition and we will confirm exactly what will be on board.</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Equipment varies by ambulance type — tell us the patient's condition and we will confirm exactly what will be on board.</p>
       </div>
+      <div data-reveal style="border-radius:32px;overflow:hidden;aspect-ratio:21/8;margin-bottom:clamp(16px,2vw,24px);box-shadow:var(--shadow-md);background:var(--card)"><img src="/assets/img/defibrillator.webp" alt="Paramedic holding defibrillator paddles, carried in ALS and cardiac ambulances" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(168px,45%),1fr));gap:12px">
         <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:22px 14px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-xs)" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h9a3 3 0 1 0-3-3"></path><path d="M4 12h13a3 3 0 1 1-3 3"></path><path d="M4 16h6"></path></svg><span style="font-size:14px;font-weight:700;color:var(--ink)">Ventilator</span></div>
         <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:22px 14px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-xs)" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="8" height="15" rx="4"></rect><path d="M10 6V4h4v2"></path><path d="M12 11v4M10 13h4"></path></svg><span style="font-size:14px;font-weight:700;color:var(--ink)">Oxygen Cylinder</span></div>
@@ -625,28 +642,28 @@
       <div data-reveal style="max-width:52ch;margin-bottom:clamp(28px,3.5vw,44px)">
         <span style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-600)">Testimonials</span>
         <h2 style="margin:10px 0 12px;font-weight:800;font-size:clamp(28px,3.6vw,44px);letter-spacing:-0.02em;line-height:1.05;color:var(--ink);text-wrap:balance">What Our Patients &amp; Families Say</h2>
-        <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-muted)">[PLACEHOLDER â€” replace with real, verifiable reviews before publishing. Toggle this section off in Tweaks until then.]</p>
+        <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-muted)">[PLACEHOLDER — replace with real, verifiable reviews before publishing. Toggle this section off in Tweaks until then.]</p>
       </div>
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(14px,1.6vw,20px)">
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"Very quick response and the ambulance was properly equipped. The team was professional and helpful throughout the hospital transfer."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Saket, Delhi</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Saket, Delhi</span></figcaption>
         </figure>
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"We needed an ICU ambulance late at night from Noida to Delhi. The coordinator explained everything clearly and stayed on the call until pickup."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Noida</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Noida</span></figcaption>
         </figure>
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"Booked a planned transfer for my father from Gurgaon. Ambulance arrived on time, the attendant was patient with him, and the vehicle was clean."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Gurgaon</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Gurgaon</span></figcaption>
         </figure>
         <figure style="margin:0;background:var(--canvas);border-radius:32px;padding:28px;display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:3px" aria-label="5 out of 5"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#fbbf24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.2-5.4-2.9-5.4 2.9 1-6.2L3.2 9.5l6.1-.9Z"></path></svg></div>
           <blockquote style="margin:0;font-size:15.5px;line-height:1.65;color:var(--ink-soft);flex:1">"Called at 2 am and someone picked up immediately. They asked the right questions and sent the ambulance type they said they would."</blockquote>
-          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">â€” Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Ghaziabad</span></figcaption>
+          <figcaption style="font-size:14px;font-weight:700;color:var(--ink)">— Patient family member <span style="font-weight:500;color:var(--ink-muted)">· Ghaziabad</span></figcaption>
         </figure>
       </div>
     </div>
@@ -727,7 +744,7 @@
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
           <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">What is the difference between BLS and ALS ambulance?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
-          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">A BLS ambulance carries basic life support â€” stretcher, oxygen, first-aid equipment and a trained attendant. An ALS ambulance adds advanced life support such as cardiac monitoring, emergency medicines and trained medical staff.</p>
+          <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:var(--ink-soft)">A BLS ambulance carries basic life support — stretcher, oxygen, first-aid equipment and a trained attendant. An ALS ambulance adds advanced life support such as cardiac monitoring, emergency medicines and trained medical staff.</p>
         </details>
         <details data-faq style="background:var(--canvas);border-radius:20px;padding:4px 20px">
           <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16px;font-weight:700;color:var(--ink);list-style:none">Do you provide neonatal ambulance service?<svg data-chev width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform 180ms var(--ease)"><path d="m6 9 6 6 6-6"></path></svg></summary>
@@ -767,6 +784,6 @@
   </section>
 </main>
 
-<?php include '../../footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>
 
 

@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+$page_canonical = '/';
+include __DIR__ . '/header.php';
+?>
 <main style="background:var(--canvas);overflow-x:hidden">
 
   <section style="position:relative;padding:clamp(40px,6vw,72px) 0 clamp(90px,10vw,130px)">
@@ -52,7 +55,7 @@
 
       <div style="position:relative">
         <div style="position:relative;width:100%;aspect-ratio:4/3.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--card)">
-          <img id="hero-ambulance" src="/assets/hero_ambulance.jpg" alt="Ambulance Service in Delhi NCR" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img id="hero-ambulance" src="/assets/img/hero_ambulance.webp" alt="Ambulance Service in Delhi NCR" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <span style="position:absolute;top:20px;left:20px;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);font-size:13px;font-weight:700;color:#047857;box-shadow:var(--shadow-sm);pointer-events:none">
           <span style="width:8px;height:8px;border-radius:50%;background:#10B981;flex:none"></span>Dispatch desk online
@@ -311,6 +314,12 @@
           <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Trained medical staff accompanying the patient throughout the journey.</p>
           <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
         </div>
+        <div style="background:var(--canvas);border:1px solid var(--line);border-radius:28px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all 180ms var(--ease)" style-hover="background:var(--card);transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(217,119,6,.35)">
+          <span style="width:46px;height:46px;border-radius:16px;background:rgba(251,191,36,.18);color:#B45309;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg></span>
+          <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--ink)">Air Ambulance</h3>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft);flex:1">Bed-to-bed medical flights for long-distance critical transfers, with ground ambulances at both ends.</p>
+          <a href="/#book" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--purple-600);text-decoration:none">Book Now<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+        </div>
       </div>
     </div>
   </section>
@@ -325,6 +334,7 @@
 
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(268px,100%),1fr));gap:clamp(14px,1.6vw,20px)">
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:16px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+          <div class="type-photo"><img src="/assets/img/bls-ambulance.webp" alt="BLS ambulance with stretcher and oxygen" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">BLS Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:rgba(16,185,129,.12);color:#047857;font-size:12px;font-weight:700">Stable</span>
@@ -339,6 +349,7 @@
           </ul>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:16px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+          <div class="type-photo"><img src="/assets/img/als-ambulance.webp" alt="Paramedics loading a patient into an ALS ambulance" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">ALS Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:var(--purple-100);color:var(--purple-700);font-size:12px;font-weight:700">Advanced</span>
@@ -354,6 +365,7 @@
         </div>
         <div style="background:var(--card);border:2px solid transparent;background-image:linear-gradient(#fff,#fff),linear-gradient(135deg,#fbbf24 0%,#F59E0B 100%);background-origin:border-box;background-clip:padding-box,border-box;border-radius:32px;box-shadow:var(--shadow-lg);padding:28px;display:flex;flex-direction:column;gap:16px;position:relative" style-hover="transform:translateY(-3px)">
           <span style="position:absolute;top:-13px;right:24px;padding:6px 14px;border-radius:999px;background:linear-gradient(135deg,#fbbf24 0%,#F59E0B 100%);color:#1a1147;font-size:12px;font-weight:800;letter-spacing:.02em;box-shadow:var(--shadow-glow-gold)">Most requested</span>
+          <div class="type-photo"><img src="/assets/img/icu-ambulance.webp" alt="ICU ambulance interior with monitoring equipment" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">ICU Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:rgba(220,38,38,.10);color:#DC2626;font-size:12px;font-weight:700">Critical</span>
@@ -368,6 +380,7 @@
           </ul>
         </div>
         <div style="background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-sm);padding:28px;display:flex;flex-direction:column;gap:16px" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+          <div class="type-photo"><img src="/assets/img/neonatal-ambulance.webp" alt="Newborn baby in a neonatal incubator" loading="lazy"></div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
             <h3 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)">Neonatal Ambulance</h3>
             <span style="padding:5px 12px;border-radius:999px;background:rgba(245,124,90,.14);color:#C2410C;font-size:12px;font-weight:700">Newborn</span>
@@ -396,7 +409,7 @@
     <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:clamp(32px,4vw,64px);align-items:center">
       <div data-reveal style="position:relative">
         <div style="width:100%;aspect-ratio:4/4.4;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-          <img src="assets/why_choose_ambulance.jpg" alt="Why Choose Our Ambulance Service" style="width:100%; height:100%; object-fit:cover;">
+          <img src="/assets/img/why_choose_ambulance.webp" alt="Why Choose Our Ambulance Service" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div style="position:absolute;right:-8px;bottom:-22px;display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-lg)">
           <span style="width:44px;height:44px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;display:grid;place-items:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
@@ -592,7 +605,7 @@
         </div>
       </div>
       <div data-reveal style="width:100%;aspect-ratio:4/3.2;border-radius:44px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--canvas)">
-        <img src="assets/hospital_transfer.jpg" alt="Hospital Transfer & Medical Transportation" style="width:100%; height:100%; object-fit:cover;">
+        <img src="/assets/img/hospital_transfer.webp" alt="Hospital Transfer &amp; Medical Transportation" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
   </section>
@@ -604,6 +617,7 @@
         <h2 style="margin:10px 0 12px;font-weight:800;font-size:clamp(28px,3.6vw,44px);letter-spacing:-0.02em;line-height:1.05;color:var(--ink);text-wrap:balance">What our ambulances carry</h2>
         <p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink-soft);text-wrap:pretty">Equipment varies by ambulance type — tell us the patient's condition and we will confirm exactly what will be on board.</p>
       </div>
+      <div data-reveal style="border-radius:32px;overflow:hidden;aspect-ratio:21/8;margin-bottom:clamp(16px,2vw,24px);box-shadow:var(--shadow-md);background:var(--card)"><img src="/assets/img/defibrillator.webp" alt="Paramedic holding defibrillator paddles, carried in ALS and cardiac ambulances" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(168px,45%),1fr));gap:12px">
         <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:22px 14px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-xs)" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h9a3 3 0 1 0-3-3"></path><path d="M4 12h13a3 3 0 1 1-3 3"></path><path d="M4 16h6"></path></svg><span style="font-size:14px;font-weight:700;color:var(--ink)">Ventilator</span></div>
         <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:22px 14px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-xs)" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-600)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="8" height="15" rx="4"></rect><path d="M10 6V4h4v2"></path><path d="M12 11v4M10 13h4"></path></svg><span style="font-size:14px;font-weight:700;color:var(--ink)">Oxygen Cylinder</span></div>
@@ -757,4 +771,4 @@
   </section>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include __DIR__ . '/footer.php'; ?>

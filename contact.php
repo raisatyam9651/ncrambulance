@@ -1,4 +1,10 @@
-<?php include 'header.php'; ?>
+<?php
+require_once __DIR__ . '/config.php';
+$page_title = 'Contact Us | 24/7 Ambulance Helpline +91 7317564794' . ' | ' . BRAND;
+$page_desc = 'Contact our 24/7 ambulance booking helpline by phone or WhatsApp for emergency, ICU, ventilator and patient transfer ambulances.';
+$page_canonical = '/contact';
+include __DIR__ . '/header.php';
+?>
 <main style="padding:clamp(60px,8vw,100px) clamp(20px,5vw,64px);max-width:1200px;margin:0 auto;min-height:60vh">
   <h1 style="margin:0 0 20px;font-size:clamp(32px,4vw,48px);font-weight:900;color:var(--ink)">Contact Us</h1>
   <p style="font-size:18px;color:var(--ink-soft);max-width:600px;margin-bottom:40px;">
@@ -48,4 +54,4 @@
     </div>
   </div>
 </main>
-<?php include 'footer.php'; ?>
+<?php include __DIR__ . '/footer.php'; ?>

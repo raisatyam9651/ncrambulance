@@ -1,4 +1,10 @@
-<?php include 'header.php'; ?>
+<?php
+require_once __DIR__ . '/config.php';
+$page_title = 'Privacy Policy' . ' | ' . BRAND;
+$page_desc = 'How we collect, use and protect the information you share when booking an ambulance through our helpline or website.';
+$page_canonical = '/privacy-policy.php';
+include __DIR__ . '/header.php';
+?>
 <main style='background:var(--canvas);padding:clamp(120px,10vw,160px) clamp(20px,5vw,64px);max-width:800px;margin:0 auto'>
   <a href="/" class="back-btn">&larr; Back to Home</a>
   
@@ -38,4 +44,4 @@
 
   <a href="/" class="back-btn">&larr; Back to Home</a>
 </main>
-<?php include 'footer.php'; ?>
+<?php include __DIR__ . '/footer.php'; ?>
