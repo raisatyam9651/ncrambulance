@@ -6,8 +6,8 @@
 if (defined('SITE_CONFIG_LOADED')) return;
 define('SITE_CONFIG_LOADED', true);
 
-// TODO before going live: replace with the real domain (no trailing slash). Also update robots.txt.
-define('SITE_URL', 'https://yourdomain.com');
+// Live domain (no trailing slash). Used by the sitemap, canonical/OG tags and schema. Keep robots.txt in sync.
+define('SITE_URL', 'https://ncrambulance.in');
 
 define('BRAND', 'NCR Ambulance');
 define('PHONE_DISPLAY', '+91 7317564794');
