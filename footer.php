@@ -1,3 +1,8 @@
+<?php
+require_once __DIR__ . '/inc/locations.php';
+$static_page = !empty($static_page);
+$AREAS = $GLOBALS['AREAS'] ?? (isset($areas_state) ? loc_areas_for_state($areas_state) : null) ?? loc_areas_default();
+?>
 <footer style="background:#1a1147;color:#fff;padding:clamp(52px,7vw,88px) 0 0">
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:clamp(28px,3vw,48px)">
@@ -6,7 +11,7 @@
           <span style="width:42px;height:42px;border-radius:14px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);display:grid;place-items:center;flex:none">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle><path d="M6 11h4M8 9v4"></path></svg>
           </span>
-          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em;color:#fff">{{ brand }}</span>
+          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em;color:#fff"><?= e(BRAND) ?></span>
         </div>
         <p style="margin:0 0 18px;font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.6);max-width:34ch">24/7 ambulance service across Delhi, Gurgaon, Noida, Ghaziabad and Faridabad — emergency response, hospital transfers and patient transportation.</p>
         <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(16,185,129,.16);color:#6EE7B7;font-size:13px;font-weight:700"><span style="width:7px;height:7px;border-radius:50%;background:#10B981"></span>24/7 availability</span>
@@ -23,6 +28,7 @@
           <li><a href="/#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ventilator Ambulance</a></li>
           <li><a href="/#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Neonatal Ambulance</a></li>
           <li><a href="/#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Patient Transfer</a></li>
+          <li><a href="/#services" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Air Ambulance</a></li>
         </ul>
       </div>
 
@@ -35,6 +41,10 @@
           <li><a href="/ambulance-service/ghaziabad/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Ghaziabad</a></li>
           <li><a href="/ambulance-service/faridabad/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Faridabad</a></li>
           <li><a href="/ambulance-service/greater-noida/" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none" style-hover="color:#fff">Greater Noida</a></li>
+<?php foreach (loc_published_states() as $_s): ?>
+          <li><a href="<?= url_state($_s) ?>" class="foot-link"><?= e($_s['name']) ?></a></li>
+<?php endforeach; ?>
+          <li><a href="/ambulance-service/" class="foot-link" style="font-weight:700;color:#FCD34D">All locations &rarr;</a></li>
         </ul>
       </div>
 
@@ -54,16 +64,33 @@
       <div>
         <h3 style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)">Contact</h3>
         <ul style="margin:0;padding:0;list-style:none;display:grid;gap:12px">
-          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg><a href="{{ telHref }}" style="font-size:14.5px;font-weight:700;color:#fff;text-decoration:none">{{ phone }}</a></li>
-          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5Z"></path></svg><a href="{{ waHref }}" target="_blank" rel="noopener" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none">WhatsApp us</a></li>
-          <li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:rgba(255,255,255,.8)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="m4 7 8 6 8-6"></path></svg>[EMAIL PLACEHOLDER]</li>
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg><a href="tel:<?= PHONE_TEL ?>" style="font-size:14.5px;font-weight:700;color:#fff;text-decoration:none"><?= e(PHONE_DISPLAY) ?></a></li>
+          <li style="display:flex;gap:10px;align-items:flex-start"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5Z"></path></svg><a href="<?= wa_href() ?>" target="_blank" rel="noopener" style="font-size:14.5px;color:rgba(255,255,255,.8);text-decoration:none">WhatsApp us</a></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:rgba(255,255,255,.8)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="m4 7 8 6 8-6"></path></svg><?php /* TODO: add business email */ ?>Email: coming soon</li>
           <li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:rgba(255,255,255,.8)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>Ground Floor, SupremeWork Co-working Space, Plot No. 84, Institutional Area, Sector 32, Gurugram, Haryana 122001</li>
         </ul>
       </div>
     </div>
 
+
+<?php if ($AREAS && $AREAS['links']): ?>
+    <details class="areas">
+      <summary>
+        <span><?= e($AREAS['title']) ?><span class="areas-count"><?= count($AREAS['links']) ?> locations</span></span>
+        <svg class="areas-chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+      </summary>
+      <div class="areas-body">
+        <a class="areas-parent" href="<?= e($AREAS['parent_href']) ?>"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m-7 7 7-7 7 7"></path></svg><?= e($AREAS['parent_text']) ?></a>
+        <ul class="areas-cols">
+<?php foreach ($AREAS['links'] as $_l): ?>
+          <li><a href="<?= e($_l['href']) ?>"<?= $_l['current'] ? ' aria-current="page"' : '' ?>><?= e($_l['text']) ?></a></li>
+<?php endforeach; ?>
+        </ul>
+      </div>
+    </details>
+<?php endif; ?>
     <div style="margin-top:clamp(36px,4vw,56px);padding:22px 0;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
-      <p style="margin:0;font-size:13px;color:rgba(255,255,255,.5)">© <span>2026</span> {{ brand }}. All rights reserved. <span style="color:rgba(255,255,255,.35)">[Replace placeholders before publishing]</span></p>
+      <p style="margin:0;font-size:13px;color:rgba(255,255,255,.5)">© <span><?= date('Y') ?></span> <?= e(BRAND) ?>. All rights reserved.</p>
       <div style="display:flex;flex-wrap:wrap;gap:20px">
         <a href="/privacy-policy.php" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Privacy Policy</a>
         <a href="/terms-and-conditions.php" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none" style-hover="color:#fff">Terms &amp; Conditions</a>
@@ -75,19 +102,19 @@
   <div data-show-mobile style="height:78px"></div>
 </footer>
 
-<sc-if value="{{ showFloatingCta }}" hint-placeholder-val="{{ true }}">
-  <a data-hide-mobile href="{{ telHref }}" style="position:fixed;right:24px;bottom:24px;z-index:70;display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 20px 46px -16px rgba(220,38,38,.95)" style-hover="transform:translateY(-2px)">
+<?php if (!$static_page): ?><sc-if value="{{ showFloatingCta }}" hint-placeholder-val="{{ true }}"><?php endif; ?>
+  <a data-hide-mobile href="tel:<?= PHONE_TEL ?>" style="position:fixed;right:24px;bottom:24px;z-index:70;display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 20px 46px -16px rgba(220,38,38,.95)" style-hover="transform:translateY(-2px)">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V8.5a1 1 0 0 1 1-1h9v9"></path><path d="M13 10.5h3.6l3.4 3.6v2.4h-2.6"></path><circle cx="7.5" cy="17.5" r="2"></circle><circle cx="16.5" cy="17.5" r="2"></circle><path d="M6 11h4M8 9v4"></path></svg>
     Call Ambulance
   </a>
-</sc-if>
+<?php if (!$static_page): ?></sc-if><?php endif; ?>
 
 <div data-show-mobile style="position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:8px">
-  <a href="{{ telHref }}" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:800;font-size:13px;text-decoration:none">
+  <a href="tel:<?= PHONE_TEL ?>" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;border-radius:16px;background:linear-gradient(180deg,#EF4444 0%,#DC2626 100%);color:#fff;font-weight:800;font-size:13px;text-decoration:none">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5 4 4.6c-.9.4-1.3 1.4-1 2.3a17 17 0 0 0 11 11c.9.3 1.9-.1 2.3-1l1.1-2.6a1.5 1.5 0 0 0-.7-1.9l-2.6-1.3a1.5 1.5 0 0 0-1.8.4l-.9 1.1a12.6 12.6 0 0 1-4.9-4.9l1.1-.9a1.5 1.5 0 0 0 .4-1.8L8.5 4.2a1.5 1.5 0 0 0-1.9-.7Z"></path></svg>
     Call
   </a>
-  <a href="{{ waHref }}" target="_blank" rel="noopener" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;font-weight:800;font-size:13px;text-decoration:none">
+  <a href="<?= wa_href() ?>" target="_blank" rel="noopener" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;border-radius:16px;background:rgba(16,185,129,.12);color:#047857;font-weight:800;font-size:13px;text-decoration:none">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5Z"></path></svg>
     WhatsApp
   </a>
@@ -97,6 +124,7 @@
   </a>
 </div>
 
+<?php if (!$static_page): ?>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;brandName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;NCR Ambulance&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 7317564794&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+91 7317564794&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business details&quot;},&quot;showFloatingCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;},&quot;showTestimonials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;}}">
 class Component extends DCLogic {
@@ -155,5 +183,6 @@ class Component extends DCLogic {
   }
 }
 </script>
+<?php endif; ?>
 </body>
 </html>

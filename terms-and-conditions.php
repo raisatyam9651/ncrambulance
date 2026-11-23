@@ -1,4 +1,10 @@
-<?php include 'header.php'; ?>
+<?php
+require_once __DIR__ . '/config.php';
+$page_title = 'Terms & Conditions' . ' | ' . BRAND;
+$page_desc = 'Terms and conditions for using our ambulance booking and dispatch helpline and website.';
+$page_canonical = '/terms-and-conditions.php';
+include __DIR__ . '/header.php';
+?>
 <main style='background:var(--canvas);padding:clamp(120px,10vw,160px) clamp(20px,5vw,64px);max-width:800px;margin:0 auto'>
   <a href="/" class="back-btn" style="display:inline-block;margin-bottom:24px;color:var(--purple-600);font-weight:700;text-decoration:none">&larr; Back to Home</a>
   
@@ -24,4 +30,4 @@
 
   <a href="/" class="back-btn" style="display:inline-block;margin-top:40px;color:var(--purple-600);font-weight:700;text-decoration:none">&larr; Back to Home</a>
 </main>
-<?php include 'footer.php'; ?>
+<?php include __DIR__ . '/footer.php'; ?>
