@@ -32,6 +32,10 @@ if (!isset($page_schema)) {
 ?><!DOCTYPE html>
 <html lang="en-IN">
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1944461281103212"
+     crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1944461281103212"
+     crossorigin="anonymous"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?= e($page_title) ?></title>
