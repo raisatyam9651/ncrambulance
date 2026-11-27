@@ -3,6 +3,7 @@ $page_title = 'Ambulance Service in Gurgaon (Gurugram) | 24/7 ICU, ALS & Emergen
 $page_desc = 'Book an ambulance in Gurgaon (Gurugram) 24/7: emergency, ICU, ALS, BLS, cardiac and ventilator ambulances, hospital transfers and patient transport. Call +91 7317564794.';
 $page_tagline = 'Ambulance Service · Gurgaon';
 $page_canonical = '/ambulance-service/gurgaon/';
+$areas_state = 'haryana';
 include __DIR__ . '/../../header.php';
 ?>
 <main style="background:var(--canvas);overflow-x:hidden">

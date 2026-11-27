@@ -132,16 +132,25 @@ function p_disclaimer() {
     return '<p class="lp-note">We are a 24/7 ambulance booking and dispatch helpline. Ambulances are operated by independent partner providers; vehicle type, crew and fare are confirmed on the call before dispatch. For the free government ambulance, dial 108. In a life-threatening emergency, also contact the nearest hospital.</p>';
 }
 
-/** Service schema for a location page. */
-function p_service_schema($serviceName, $areaName, $url) {
-    return [
+/** Service schema for a location page, including local areas in areaServed. */
+function p_service_schema($serviceName, $areaName, $url, array $localAreas = [], $desc = '') {
+    $areaServed = [['@type' => 'AdministrativeArea', 'name' => $areaName . ', India']];
+    foreach ($localAreas as $area) {
+        $area = trim((string)$area);
+        if ($area !== '') {
+            $areaServed[] = ['@type' => 'Place', 'name' => $area . ', ' . $areaName];
+        }
+    }
+    $schema = [
         '@context' => 'https://schema.org',
         '@type' => 'Service',
         'serviceType' => $serviceName,
         'name' => $serviceName . ' in ' . $areaName,
         'url' => abs_url($url),
         'provider' => ['@type' => 'Organization', 'name' => BRAND, 'telephone' => PHONE_DISPLAY, 'url' => SITE_URL . '/'],
-        'areaServed' => ['@type' => 'AdministrativeArea', 'name' => $areaName . ', India'],
+        'areaServed' => count($areaServed) === 1 ? $areaServed[0] : $areaServed,
         'availableChannel' => ['@type' => 'ServiceChannel', 'servicePhone' => ['@type' => 'ContactPoint', 'telephone' => PHONE_DISPLAY, 'contactType' => 'emergency', 'hoursAvailable' => '24/7']],
     ];
+    if ($desc !== '') $schema['description'] = $desc;
+    return $schema;
 }

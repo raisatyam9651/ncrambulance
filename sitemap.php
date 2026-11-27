@@ -26,11 +26,15 @@ $locMod = max(array_map(fn($f) => filemtime(__DIR__ . '/' . $f), ['data/india.ph
 $locMod = date('Y-m-d', $locMod);
 $add(url_india(), $locMod, '0.8');
 foreach (loc_published_states() as $s) {
-    $add(url_state($s), $locMod, '0.8');
-    foreach (loc_services() as $slug => $_) $add(url_state_service($s, $slug), $locMod, '0.6');
+    if (loc_is_indexable($s['slug'], 'state')) $add(url_state($s), $locMod, '0.8');
+    foreach (loc_services() as $slug => $_) {
+        if (loc_is_indexable($s['slug'], 'state-service', null, $slug)) $add(url_state_service($s, $slug), $locMod, '0.6');
+    }
     foreach ($s['districts'] as $d) {
-        $add(url_district($s, $d), $locMod, '0.7');
-        foreach (loc_services() as $slug => $_) $add(url_district_service($s, $d, $slug), $locMod, '0.5');
+        if (loc_is_indexable($s['slug'], 'district', $d['slug'])) $add(url_district($s, $d), $locMod, '0.7');
+        foreach (loc_services() as $slug => $_) {
+            if (loc_is_indexable($s['slug'], 'district-service', $d['slug'], $slug)) $add(url_district_service($s, $d, $slug), $locMod, '0.5');
+        }
     }
 }
 

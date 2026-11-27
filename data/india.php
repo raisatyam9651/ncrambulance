@@ -103,12 +103,30 @@ return [
         'Mahisagar|Lunawada', 'Mehsana', 'Morbi', 'Narmada|Rajpipla', 'Navsari', 'Panchmahal|Godhra', 'Patan', 'Porbandar', 'Rajkot',
         'Sabarkantha|Himmatnagar', 'Surat', 'Surendranagar', 'Tapi|Vyara', 'Vadodara', 'Valsad', 'Vav-Tharad|Tharad',
     ]],
-    'haryana' => ['name' => 'Haryana', 'type' => 'State', 'capital' => 'Chandigarh',
-        'override' => ['gurugram' => '/ambulance-service/gurgaon/', 'faridabad' => '/ambulance-service/faridabad/'],
-        'districts' => [
-        'Ambala', 'Bhiwani', 'Charkhi Dadri', 'Faridabad', 'Fatehabad', 'Gurugram', 'Hisar', 'Jhajjar', 'Jind', 'Kaithal', 'Karnal',
-        'Kurukshetra', 'Mahendragarh|Narnaul', 'Nuh', 'Palwal', 'Panchkula', 'Panipat', 'Rewari', 'Rohtak', 'Sirsa', 'Sonipat', 'Yamunanagar',
-    ]],
+    'haryana' => [
+        'name' => 'Haryana', 'short' => 'HR', 'type' => 'State', 'capital' => 'Chandigarh',
+        'hubs' => [
+            'chandigarh' => 'Chandigarh — PGIMER Chandigarh and GMCH Sector 32',
+            'rohtak'     => 'Rohtak — PGIMS Rohtak (Pt. B.D. Sharma University of Health Sciences)',
+            'gurugram'   => 'Gurugram — Medanta, Artemis, Fortis and Civil Hospital Gurugram',
+            'faridabad'  => 'Faridabad — Amrita Hospital, ESIC Medical College and Metro Heart Institute',
+            'karnal'     => 'Karnal — Kalpana Chawla Government Medical College & Hospital',
+            'hisar'      => 'Hisar — Maharaja Agrasen Medical College, Agroha and multi-speciality centres',
+            'delhi'      => 'Delhi — AIIMS New Delhi, Safdarjung and other tertiary hospitals',
+        ],
+        'override' => [
+            'gurugram'  => '/ambulance-service/gurgaon/',
+            'faridabad' => '/ambulance-service/faridabad/',
+        ],
+        'divisions' => [
+            'Ambala'    => ['hubs' => ['chandigarh', 'karnal'], 'airport' => 'Chandigarh', 'districts' => ['Ambala', 'Kurukshetra', 'Panchkula', 'Yamunanagar']],
+            'Faridabad' => ['hubs' => ['faridabad', 'delhi'], 'airport' => 'Delhi (IGI)', 'districts' => ['Faridabad', 'Nuh', 'Palwal']],
+            'Gurugram'  => ['hubs' => ['gurugram', 'delhi'], 'airport' => 'Delhi (IGI)', 'districts' => ['Gurugram', 'Mahendragarh|Narnaul', 'Rewari']],
+            'Hisar'     => ['hubs' => ['hisar', 'rohtak', 'chandigarh'], 'airport' => 'Hisar or Chandigarh', 'districts' => ['Fatehabad', 'Hisar', 'Jind', 'Sirsa']],
+            'Karnal'    => ['hubs' => ['karnal', 'chandigarh', 'delhi'], 'airport' => 'Chandigarh or Delhi (IGI)', 'districts' => ['Kaithal', 'Karnal', 'Panipat']],
+            'Rohtak'    => ['hubs' => ['rohtak', 'gurugram', 'delhi'], 'airport' => 'Delhi (IGI)', 'districts' => ['Bhiwani', 'Charkhi Dadri', 'Jhajjar', 'Rohtak', 'Sonipat']],
+        ],
+    ],
     'himachal-pradesh' => ['name' => 'Himachal Pradesh', 'type' => 'State', 'capital' => 'Shimla', 'districts' => [
         'Bilaspur', 'Chamba', 'Hamirpur', 'Kangra|Dharamshala', 'Kinnaur|Reckong Peo', 'Kullu', 'Lahaul and Spiti|Keylong', 'Mandi', 'Shimla',
         'Sirmaur|Nahan', 'Solan', 'Una',

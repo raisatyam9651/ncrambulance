@@ -3,6 +3,7 @@ $page_title = 'Ambulance Service in Faridabad | 24/7 ICU, ALS & Emergency Ambula
 $page_desc = 'Book an ambulance in Faridabad 24/7: emergency, ICU, ALS, BLS, cardiac and ventilator ambulances, hospital transfers and patient transport. Call +91 7317564794.';
 $page_tagline = 'Ambulance Service · Faridabad';
 $page_canonical = '/ambulance-service/faridabad/';
+$areas_state = 'haryana';
 include __DIR__ . '/../../header.php';
 ?>
 <main style="background:var(--canvas);overflow-x:hidden">

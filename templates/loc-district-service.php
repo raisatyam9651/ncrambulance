@@ -21,8 +21,11 @@ $lead = loc_pick($seed, [
     "$svName for $name and nearby districts — one call, the right equipment and a trained crew.",
 ]);
 
+$localAreas = $D['local']['areas'] ?? [];
+$areaSnippet = $localAreas ? ' Covering ' . implode(', ', array_slice($localAreas, 0, 3)) . ' & nearby areas.' : '';
+
 $page_title    = "$svName in $label | 24/7 Booking – Call " . PHONE_DISPLAY;
-$page_desc     = "$svName in $name, {$S['name']}: " . rtrim($sv['card'], '.') . ". 24/7 booking, fare confirmed on call. Call " . PHONE_DISPLAY . ".";
+$page_desc     = "$svName in $name, {$S['name']}: " . rtrim($sv['card'], '.') . ". 24/7 booking, fare confirmed on call.$areaSnippet Call " . PHONE_DISPLAY . ".";
 $page_tagline  = "$svName · $name";
 $page_og_image = $sv['image'];
 
@@ -41,7 +44,7 @@ $faqs[] = ["Is $svName booking available 24/7 in $name?", "Yes, the helpline " .
 if ($routes) $faqs[] = ["Can $an $svName take the patient from $name to $hubCity?", "Yes. Transfers from $name to " . loc_join(array_slice($routes, 0, 3)) . " can be arranged. Share the destination hospital and the patient's condition so we can plan oxygen, equipment and crew for the journey."];
 $faqHtml = p_faq($faqs, $schemaFaq);
 
-$page_schema = [$schemaCrumbs, p_service_schema($svName, "$name, {$S['name']}", $url), $schemaFaq];
+$page_schema = [$schemaCrumbs, p_service_schema($svName, "$name, {$S['name']}", $url, $localAreas, $page_desc), $schemaFaq];
 $AREAS = loc_areas_for_state($S['slug'], $svcSlug, $D['slug']);
 
 include __DIR__ . '/../header.php';
@@ -73,6 +76,7 @@ include __DIR__ . '/../header.php';
       <h2 class="lp-h2"><?= e($svName) ?> coverage in <?= e($name) ?></h2>
       <ul class="lp-facts">
         <li><?= ICON_MAP ?><span><strong>Pickup anywhere in <?= e($name) ?> district</strong> — <?= e($hq) ?> town, hospitals, homes and highways<?= $D['division'] ? ' (' . e($D['division']) . ' division, ' . e($S['name']) . ')' : '' ?>.</span></li>
+        <?php if ($localAreas): ?><li><?= ICON_PIN ?><span><strong>Local areas &amp; towns covered:</strong> <?= e(implode(', ', $localAreas)) ?>.</span></li><?php endif; ?>
         <li><?= ICON_HOSP ?><span><strong>Common destinations:</strong> <?= e(loc_join($hubs)) ?>.</span></li>
         <?php if ($D['airport']): ?><li><?= ICON_PLANE ?><span><strong>Nearest airport<?= $isAir ? ' for the medical flight' : '' ?>:</strong> <?= e($D['airport']) ?><?= $isAir ? ' — we coordinate the ground ambulance from ' . e($name) . ' to the aircraft and from the destination airport to the receiving hospital.' : '.' ?></span></li><?php endif; ?>
         <li><?= ICON_PIN ?><span><strong><?= e($svName) ?> in nearby districts:</strong> <?php $i = 0; foreach ($nearby as $n): ?><?= $i++ ? ', ' : '' ?><a href="<?= e(url_district_service($S, $n, $svcSlug)) ?>" style="color:var(--purple-700);font-weight:600"><?= e($n['name']) ?></a><?php endforeach; ?>.</span></li>

@@ -27,7 +27,8 @@ foreach ($sv['faqs'] as [$q, $a]) $faqs[] = [loc_fill($q, $st), loc_fill($a, $st
 $faqs[] = ["In which districts of $st is the $svName available?", "We arrange the $svName in all $count districts of $st through partner operators. Pick your district from the list above or call " . PHONE_DISPLAY . " to check the nearest vehicle."];
 $faqHtml = p_faq($faqs, $schemaFaq);
 
-$page_schema = [$schemaCrumbs, p_service_schema($svName, $st, $url), $schemaFaq];
+$districtNames = array_map(fn($d) => $d['name'], $S['districts']);
+$page_schema = [$schemaCrumbs, p_service_schema($svName, $st, $url, $districtNames, $page_desc), $schemaFaq];
 $AREAS = loc_areas_for_state($S['slug'], $svcSlug);
 
 include __DIR__ . '/../header.php';

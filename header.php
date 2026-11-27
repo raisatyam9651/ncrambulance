@@ -25,7 +25,7 @@ if (!isset($page_schema)) {
         'telephone' => PHONE_DISPLAY,
         'image' => SITE_URL . '/assets/img/emergency-ambulance.webp',
         'address' => ['@type' => 'PostalAddress', 'streetAddress' => 'Ground Floor, SupremeWork Co-working Space, Plot No. 84, Institutional Area, Sector 32', 'addressLocality' => 'Gurugram', 'addressRegion' => 'Haryana', 'postalCode' => '122001', 'addressCountry' => 'IN'],
-        'areaServed' => ['Delhi', 'Gurugram', 'Noida', 'Ghaziabad', 'Faridabad', 'Greater Noida', 'Uttar Pradesh'],
+        'areaServed' => ['Delhi', 'Gurugram', 'Noida', 'Ghaziabad', 'Faridabad', 'Greater Noida', 'Haryana', 'Uttar Pradesh'],
         'openingHoursSpecification' => ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], 'opens' => '00:00', 'closes' => '23:59'],
     ]];
 }

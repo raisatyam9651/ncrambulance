@@ -23,8 +23,11 @@ $body = loc_pick($seed . 'b', [
     "From road accidents on the highway to planned dialysis visits in $hq, our helpline arranges ambulances across $name district and confirms the vehicle, crew and fare before dispatch.",
 ]);
 
+$localAreas = $D['local']['areas'] ?? [];
+$areaSnippet = $localAreas ? ' Covering ' . implode(', ', array_slice($localAreas, 0, 3)) . ' & nearby areas.' : '';
+
 $page_title   = "Ambulance Service in $label | 24/7 ICU & Emergency Ambulance";
-$page_desc    = "Need an ambulance in $name, {$S['name']}? Call " . PHONE_DISPLAY . " — 24/7 emergency, ICU, ALS, BLS, cardiac, ventilator & air ambulance booking with fare confirmed on call.";
+$page_desc    = "Need an ambulance in $name, {$S['name']}? Call " . PHONE_DISPLAY . " — 24/7 emergency, ICU, ALS, BLS, cardiac, ventilator & air ambulance.$areaSnippet";
 $page_tagline = "24/7 Ambulance · $name";
 $page_og_image = '/assets/img/emergency-ambulance.webp';
 
@@ -46,7 +49,7 @@ $faqs = [
 ];
 $faqHtml = p_faq($faqs, $schemaFaq);
 
-$page_schema = [$schemaCrumbs, p_service_schema('Ambulance service', "$name, {$S['name']}", $url), $schemaFaq];
+$page_schema = [$schemaCrumbs, p_service_schema('Ambulance service', "$name, {$S['name']}", $url, $localAreas, $page_desc), $schemaFaq];
 $AREAS = loc_areas_for_state($S['slug'], null, $D['slug']);
 
 include __DIR__ . '/../header.php';

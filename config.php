@@ -23,7 +23,17 @@ define('BUSINESS_ADDRESS', 'Ground Floor, SupremeWork Co-working Space, Plot No.
  */
 define('PUBLISHED_STATES', [
     'uttar-pradesh',
+    'haryana',
 ]);
+
+/**
+ * Gradual roll-out per state: when a state is listed here, only these districts
+ * (and core state-service pages) are indexable & in sitemap.xml; the rest get noindex, follow.
+ */
+define('LIVE_DISTRICTS', [
+    'haryana' => ['rohtak', 'hisar', 'karnal', 'panipat'],
+]);
+define('LIVE_STATE_SERVICES', ['emergency-ambulance', 'icu-ambulance', 'als-ambulance', 'air-ambulance']);
 
 // Path to the design-system stylesheet shared by every page.
 define('DS_CSS', '/_ds/ethical-healthcare-community-design-syst-6ce9bd81-787b-44c9-bdfb-94df1770d8a1/colors_and_type.css');

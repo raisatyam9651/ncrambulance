@@ -53,6 +53,13 @@ function loc_states() {
 
 function loc_state($slug) { $all = loc_states(); return $all[$slug] ?? null; }
 function loc_is_published($slug) { return in_array($slug, PUBLISHED_STATES, true); }
+function loc_is_indexable($stateSlug, $type, $districtSlug = null, $svcSlug = null) {
+    if (!loc_is_published($stateSlug)) return false;
+    if (!defined('LIVE_DISTRICTS') || !isset(LIVE_DISTRICTS[$stateSlug])) return true;
+    if ($type === 'state') return true;
+    if ($type === 'state-service') return defined('LIVE_STATE_SERVICES') && in_array($svcSlug, LIVE_STATE_SERVICES, true);
+    return in_array($districtSlug, LIVE_DISTRICTS[$stateSlug], true);
+}
 function loc_published_states() {
     return array_filter(loc_states(), fn($s) => loc_is_published($s['slug']));
 }

@@ -70,7 +70,8 @@ if ($type === 'district' && isset($S['override'][$D['slug']])) {
 
 // Shared page settings
 $static_page = true;
-$page_robots = ($S && !loc_is_published($S['slug'])) ? 'noindex, nofollow' : null;
+$isIndexable = !$S || loc_is_indexable($S['slug'], $type, $D['slug'] ?? null, $svcSlug);
+$page_robots = ($S && !loc_is_published($S['slug'])) ? 'noindex, nofollow' : (!$isIndexable ? 'noindex, follow' : null);
 $page_canonical = $canonPath;
 
 include __DIR__ . '/templates/loc-' . $type . '.php';

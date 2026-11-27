@@ -28,7 +28,8 @@ $faqs = [
 ];
 $faqHtml = p_faq($faqs, $schemaFaq);
 
-$page_schema = [$schemaCrumbs, p_service_schema('Ambulance service', $st, $url), $schemaFaq];
+$districtNames = array_map(fn($d) => $d['name'], $S['districts']);
+$page_schema = [$schemaCrumbs, p_service_schema('Ambulance service', $st, $url, $districtNames, $page_desc), $schemaFaq];
 $AREAS = loc_areas_for_state($S['slug']);
 
 include __DIR__ . '/../header.php';
